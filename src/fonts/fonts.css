@@ -21,3 +21,7 @@
 	src: url(../fonts/Montserrat-Bold.ttf) format("truetype");
 
 }
+
+@font-face {font-family: 'Montserrat-Black', sans-serif;
+	src: url(../fonts/Montserrat-Black.ttf) format("truetype");
+}
