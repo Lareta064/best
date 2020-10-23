@@ -108,15 +108,18 @@ input, input:focus, button, button:focus, input::placeholder {
     line-height: 1.22;
   }
 }
-.section-title h3,
+.section-title h2,
 .title-3 h3 {
   font-size: 40px;
   line-height: 1.22;
   color: @purple;
   font-weight: 900;
 }
-.section-title h3{
+.section-title{
   margin-bottom: 40px;
+}
+.section-title h2{
+  
   @media(max-width:991px){
     font-size: 34px;
   }
@@ -124,9 +127,21 @@ input, input:focus, button, button:focus, input::placeholder {
     font-size: 24px;
   }
 }
+.block-title{
+  margin-bottom: 20px;
+}
+.block-title h3{
+  font-size: 30px;
+  line-height: 1.23;
+  font-weight: 700;
+  @media(max-width:767px){
+    font-size: 20px;
+    line-height: 1.4;
+  }
+}
 .title-4 h4 {
   font-size: 34px;
-  line-height: 1.2;
+  line-height: 1.23;
   color: @purple;
   font-weight: 900;
 }
@@ -173,6 +188,11 @@ p {
 //color text
 .green-text p{
  color: @green;
+}
+.bg-blue{
+  border-radius: 15px;
+  background-color: @darkblue;
+  padding: 30px;
 }
 //label
 .card-label{
