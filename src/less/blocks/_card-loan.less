@@ -1,26 +1,152 @@
 .loan-card{
-	max-width: 400px;
+	width: 400px;
+	height: 530px;
 	.ma;
 	border-radius:10px;
-	position: absolute;
+	position: relative;
 	overflow: hidden;
 	background: #FFFFFF;
 	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
 	padding-bottom: 50px;
-	border: 1px solid red;
+	@media(max-width:1364px){
+		width: 300px;
+	}
+	@media(max-width:767px){
+		margin-bottom: 30px;
+		width: 335px;
+		
+	}
 }
+
 .loan-card__head{
 	box-shadow: 0 4px 4px rgba(0,0,0, .25);
+	background-position:center;
+	height: 200px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	
+}
+.loan-card__title{
 	.flex;
 	justify-content: space-between;
+	.head-4{
+		color: @blue;
+		border-bottom: 1px solid rgba(77, 124, 254, .2);
+	}
+	margin-bottom: 22px;
 }
 .loan-card__body{
 	padding-left: 30px;
 	padding-right: 30px;
 	padding-top: 20px;
-	min-height: 230px;
+	margin-bottom: 30px;
 }
 .loan-card__footer{
 	padding-left: 30px;
 	padding-right: 30px;
+	display: flex;
+	
+	align-items: center;
+	.button-link{
+		font-weight: 700;
+		color: @blue;
+		border-bottom: 1px solid @blueOp;
+		padding-bottom: 4px;
+		margin-left: 40px;
+	}
+}
+.loan-card__terms{
+	display: flex;
+	margin-bottom: 20px;
+	.terms-item{
+		
+		p:first-child{
+			font-weight: 900;
+			font-size: 30px;
+			line-height: 1.2;
+			color: @purple;
+		}
+		p:last-child{
+			color: #000;
+			
+		}
+		span{
+			font-size: 16px;
+			font-weight: 900;
+		}
+	}
+	.terms-item + .terms-item{
+		margin-left: 50px;
+		p:first-child{
+			font-weight: 700;
+			
+		}
+	}
+}
+.terms-item.green-text p:first-child{
+	color: @green;
+}
+.rating-star{
+	display: flex;
+	align-items: center;
+	span{
+		line-height: 1;
+	}
+	span + span{
+		margin-left: 5px;
+	}
+}
+.rating-star span path{
+	fill: #FCA674;
+}
+.rating-star span.passive-star path{
+	fill: #dcdcdc;
+}
+
+.rating-info{
+	margin-top: 5px;
+}
+.loan-card-1 .loan-card__head{
+	background-color:  #2156A4;
+	
+}
+.loan-card-2 .loan-card__head{
+	background-color: #0F1F2F;
+}
+.loan-card-3 .loan-card__head{
+	background-color: #0e3c60;
+}
+.loan-card.loan-card-1{
+	.button-light{
+		display: none;
+	}
+	@media(min-width:768px) and (max-width:991px){
+		margin-bottom: 30px;
+		width: 100%;
+		height: 458px;
+		max-width:630px;
+		margin-left: auto;
+		margin-right: auto;
+		.flex-inner{
+			display: flex;
+		}
+		.loan-card__terms{
+			margin-bottom: 0;
+		}
+		.loan-card__terms .terms-item + .terms-item,
+		.loan-card__rating{
+			margin-left: 56px;
+		}
+		.page-button, .button-light{
+			width: 270px;
+			display: inline-block;
+			text-align: center;
+		}
+		.button-light{
+			margin-left: 30px;
+		}
+		.button-link{
+			display: none;
+		}
+	}
 }
