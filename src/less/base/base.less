@@ -13,7 +13,7 @@ body {
   width: 100%;
   height: 100%;
   color: @text;
-  font-family:@m400;
+  font-family: @m400;
   font-size: 16px;
   line-height: 1.625;
   line-height: normal;
@@ -80,7 +80,7 @@ input, input:focus, button, button:focus, input::placeholder {
   }
 }
 
-.container-large { 
+.container-large {
   width: 100%;
 
   background-color: blue;
@@ -108,32 +108,20 @@ input, input:focus, button, button:focus, input::placeholder {
   }
 }
 
-.title-2 h2 {
+.title-3 h3 {
   font-size: 40px;
   line-height: 1.22;
   color: @purple;
   font-family: @m900;
-
-  @media (max-width: 991px) {
-    font-size: 40px;
-  }
-
-  @media (max-width: 767px) {
-    font-size: 36px;
-  }
 }
 
-.title-3 h3 {
+.title-4 h4 {
   font-size: 34px;
   line-height: 1.2;
   color: @purple;
   font-family: @m900;
-
-  @media (max-width: 767px) {
-    font-size: 24px;
-    line-height: 1.17;
-  }
 }
+
 
 //text
 p {
@@ -142,9 +130,29 @@ p {
   color: #000000;
 }
 
+.text-30 p {
+  font-size: 30px;
+  line-height: 1.2;
+}
+
+.text-24 p {
+  font-size: 24px;
+  line-height: 1.2;
+  font-family: @m900;
+  color: @purple;
+
+  @media (max-width: 767px) {
+    font-size: 20px;
+  }
+}
+
+.text-20 p {
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: @m700;
+}
 
 
 //link
 
 
-//button
