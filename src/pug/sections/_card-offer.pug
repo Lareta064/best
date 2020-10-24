@@ -1,14 +1,14 @@
 section.loan-offers
 	.container
 		.section-title
-			h2 Top-3 best personal loans for you
-		.loan-cards
+			h2 Other offers that suit your purpose
+		.offer-cards
 			.row
-				.col-lg-4
-					.loan-card.loan-card-1
+				//===== offer-card-1 =====
+				.col-md-6.col-lg-4
+					.loan-card
 						.card-label Best APR 
-						.loan-card__head(style="background-image: url(img/cards/credible.jpg)")
-							
+						.loan-card__head(style="background-image: url(img/cards/amone.jpg)")
 						.loan-card__body
 							.loan-card__title
 								.head-4
@@ -16,7 +16,7 @@ section.loan-offers
 								.help-block ?
 							.flex-inner
 								.loan-card__terms
-									.terms-item.green-text
+									.terms-item
 										p 4%
 										p Min APP
 									.terms-item
@@ -35,11 +35,11 @@ section.loan-offers
 						.loan-card__footer
 							button.page-button.w-200 Get your rate
 							a(href="#!").button-link Review
-							a(href="#!").button-light Review the offer
+				//===== offer-card-2 =====
 				.col-md-6.col-lg-4
-					.loan-card.loan-card-2
+					.loan-card
 						.card-label Best loan term
-						.loan-card__head(style="background-image: url(img/cards/lendingtree.jpg)")
+						.loan-card__head(style="background-image: url(img/cards/skfunds.jpg)")
 							
 						.loan-card__body
 							.loan-card__title
@@ -66,11 +66,11 @@ section.loan-offers
 						.loan-card__footer
 							button.page-button.w-200 Get your rate
 							a(href="#!").button-link Review
+				//===== offer-card-3 =====
 				.col-md-6.col-lg-4
-					.loan-card.loan-card-3
+					.loan-card
 						.card-label.card-label--orange Best rating
-						.loan-card__head(style="background-image: url(img/cards/Lendingclub.jpg)")
-							
+						.loan-card__head(style="background-image: url(img/cards/upgrade.jpg)")
 						.loan-card__body
 							.loan-card__title
 								.head-4
@@ -96,5 +96,65 @@ section.loan-offers
 						.loan-card__footer
 							button.page-button.w-200 Get your rate
 							a(href="#!").button-link Review
-		include _form-subscribe
-include _card-offer
+				//===== offer-card-4 =====
+				.col-md-6.col-lg-4.show-tablet.hide-card
+					.loan-card.loan-card-3
+						.card-label.card-label--orange Best rating
+						.loan-card__head(style="background-image: url(img/cards/Lendingclub.jpg)")
+						.loan-card__body
+							.loan-card__title
+								.head-4
+									h4 LendingClub
+								.help-block ?
+							.loan-card__terms
+								.terms-item
+									p 6%
+									p Min APP
+								.terms-item
+									p 12 
+										span years
+									p MAX loan term
+							.loan-card__rating
+								.rating-star
+									+star
+									+star
+									+star
+									+star
+									+star
+								.rating-info
+									p 1,871 reviews on Starpilot
+						.loan-card__footer
+							button.page-button.w-200 Get your rate
+							a(href="#!").button-link Review
+				//===== offer-card-5 =====
+				.col-md-6.col-lg-4.hide-card
+					.loan-card.loan-card-3
+						.card-label.card-label--orange Best rating
+						.loan-card__head(style="background-image: url(img/cards/Lendingclub.jpg)")
+						.loan-card__body
+							.loan-card__title
+								.head-4
+									h4 LendingClub
+								.help-block ?
+							.loan-card__terms
+								.terms-item
+									p 6%
+									p Min APP
+								.terms-item
+									p 12 
+										span years
+									p MAX loan term
+							.loan-card__rating
+								.rating-star
+									+star
+									+star
+									+star
+									+star
+									+star
+								.rating-info
+									p 1,871 reviews on Starpilot
+						.loan-card__footer
+							button.page-button.w-200 Get your rate
+							a(href="#!").button-link Review
+
+		button#show-cards.button-light.w-100 Show more offers
