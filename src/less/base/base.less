@@ -18,6 +18,7 @@ body {
   font-size: 16px;
   line-height: 1.2;
   line-height: normal;
+  background-color: #F4FBFF;
 
 }
 
@@ -83,8 +84,6 @@ input, input:focus, button, button:focus, input::placeholder {
 
 .container-large {
   width: 100%;
-
-  background-color: blue;
   @media (min-width: 768px) {
     padding-left: 25px;
     padding-right: 25px;
@@ -98,7 +97,7 @@ input, input:focus, button, button:focus, input::placeholder {
   color: #ffffff;
   font-weight: 900;
 
-  @media (max-width: 991px) {
+  @media (max-width: 1364px) {
     font-size: 70px;
     line-height: 1.29;
   }
@@ -139,6 +138,7 @@ input, input:focus, button, button:focus, input::placeholder {
     line-height: 1.4;
   }
 }
+.article-title h3,
 .title-4 h4 {
   font-size: 34px;
   line-height: 1.23;
@@ -164,7 +164,7 @@ p {
   font-size: 30px;
   line-height: 1.2;
 }
-
+.article-title h4,
 .text-24 p {
   font-size: 24px;
   line-height: 1.2;
@@ -186,6 +186,9 @@ p {
 //link
 
 //color text
+.text-bold p, p.text-bold{
+  font-weight: 700;
+}
 .green-text p{
  color: @green;
 }

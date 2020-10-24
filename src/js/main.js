@@ -29,4 +29,42 @@ $(document).ready(function () {
 
         }
     });
+
+    // CUSTOM FORM SELECT
+	const selectElement = document.querySelector('.form-select');
+	if (selectElement) {
+		const selectInput = selectElement.querySelector('input');
+		const selectOptions = selectElement.querySelector('.form-select__options');
+		const selectArrow = selectElement.querySelector('.form-select__icon');
+
+
+
+		selectArrow.addEventListener('click', function () {
+
+			if (selectOptions.classList.contains('active')) {
+				this.classList.remove('rotate');
+				selectOptions.classList.remove('active');
+			} else {
+				this.classList.add('rotate');
+				selectOptions.classList.add('active');
+			}
+
+		});
+
+		//click on select dropdown
+		selectOptions.addEventListener('click', function (e) {
+			if (e.target.tagName == 'LI') {
+				selectInput.value = e.target.textContent;
+				this.classList.remove('active');
+				selectArrow.classList.remove('rotate');
+				// console.log(e.target.textContent)
+			}
+
+		});
+    }
+    
+    //FORM RANGE INPUT 
+    document.querySelector('#amount-val').innerHTML = 10000;
+    document.querySelector('#income-val').innerHTML = 50000;
+
 })
