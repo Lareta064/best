@@ -1,0 +1,8 @@
+extends ../layouts/layout.pug
+
+block content
+	+header([{link: "index.html", title: "Top 10"}, {link: "review.html", title: "Reviews"}, {link: "methodology.html", title: "Peer to Peer", addClass: 'active'}, {link: "#", title: "Comparison"}, {link: "#", title: "Learn"}])
+	include ../sections/method/_header-banner
+
+block variables
+	-var title = "Methodology";

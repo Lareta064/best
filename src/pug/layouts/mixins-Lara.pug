@@ -1,0 +1,17 @@
+mixin header(arg)
+	header.header
+		.container
+			.header-content
+				a(href="index.html").logo bestofpersonalloans.com
+				.header-menu
+					ul
+						each item in arg
+							if item.addClass
+								li.active
+									a(href="" +item.link) #{item.title}
+							else
+								li
+									a(href="" +item.link) #{item.title}						
+				a(href="#!").header-button.button-light.w-200  The Very Best of ...
+				.menu-toggle
+					span

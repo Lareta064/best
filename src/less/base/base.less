@@ -16,8 +16,9 @@ body {
   font-family: 'Montserrat';
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.625;
+  line-height: 1.2;
   line-height: normal;
+  background-color: #F4FBFF;
 
 }
 
@@ -83,8 +84,6 @@ input, input:focus, button, button:focus, input::placeholder {
 
 .container-large {
   width: 100%;
-
-  background-color: blue;
   @media (min-width: 768px) {
     padding-left: 25px;
     padding-right: 25px;
@@ -98,7 +97,7 @@ input, input:focus, button, button:focus, input::placeholder {
   color: #ffffff;
   font-weight: 900;
 
-  @media (max-width: 991px) {
+  @media (max-width: 1364px) {
     font-size: 70px;
     line-height: 1.29;
   }
@@ -108,17 +107,41 @@ input, input:focus, button, button:focus, input::placeholder {
     line-height: 1.22;
   }
 }
-
+.section-title h2,
 .title-3 h3 {
   font-size: 40px;
   line-height: 1.22;
   color: @purple;
   font-weight: 900;
 }
-
+.section-title{
+  margin-bottom: 40px;
+}
+.section-title h2{
+  
+  @media(max-width:991px){
+    font-size: 34px;
+  }
+  @media(max-width:767px){
+    font-size: 24px;
+  }
+}
+.block-title{
+  margin-bottom: 20px;
+}
+.block-title h3{
+  font-size: 30px;
+  line-height: 1.23;
+  font-weight: 700;
+  @media(max-width:767px){
+    font-size: 20px;
+    line-height: 1.4;
+  }
+}
+.article-title h3,
 .title-4 h4 {
   font-size: 34px;
-  line-height: 1.2;
+  line-height: 1.23;
   color: @purple;
   font-weight: 900;
 }
@@ -140,7 +163,7 @@ p {
   font-size: 30px;
   line-height: 1.2;
 }
-
+.article-title h4,
 .text-24 p {
   font-size: 24px;
   line-height: 1.2;
@@ -160,5 +183,41 @@ p {
 
 
 //link
+.text-link{
+  color: @blue;
+  border-bottom: 1px solid @blueOp;
+}
+//color text
+.text-bold p, p.text-bold{
+  font-weight: 700;
+}
+.red-text, .red-text p{
+  color:@red ;
+}
+.green-text,
+.green-text p{
+ color: @green;
+}
+.bg-blue{
+  border-radius: 15px;
+  background-color: @darkblue;
+  padding: 30px;
+}
+//label
+.card-label{
+  border-radius: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 28px;
+  line-height: 29px;
+  font-weight: 700;
+  color: #fff;
+  display: inline-block;
+  position: absolute;
+  
+  background-color: @green;
+}
 
-
+.card-label.card-label--orange{
+  background-color: @orange;
+}

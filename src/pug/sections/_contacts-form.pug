@@ -1,0 +1,29 @@
+form.contact-form(action="#")
+	.form-body
+		.form-item
+			label Loan Purpose
+			.form-select
+				.form-select__icon
+					+selectArr
+				input(type="text" name="" placeholder="Home Improvements" autocomplete="off")
+				ul.form-select__options
+					li select item
+					li select item
+					li select item
+					li select item
+		.form-item
+			label Loan Amount
+			.form-range
+				.form-range-value.d-flex
+					span $
+					span#amount-val
+				input(type="range" min="0" max="30000" value="10000" oninput="document.getElementById('amount-val').innerHTML =this.value;")
+		.form-item
+			label Annual Income
+			.form-range
+				.form-range-value.d-flex
+					span $
+					span#income-val
+				input(type="range" min="0" max="200000" value="50000" oninput="document.getElementById('income-val').innerHTML =this.value;") 
+	.form-footer
+		button(type="submit").page-button.w-100 Find my best loan
