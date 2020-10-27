@@ -26,7 +26,7 @@
 		position: absolute;
 		right: -22px;
 		top:-12px;
-		opacity: 0;
+		display: none;
 		@media(max-width:1364px){
 			min-width:280px;
 		}
@@ -56,10 +56,11 @@
 	}
 }
 .page-tooltip:hover .page-tooltip__box{
-	animation-name: zoomIn;
-	animation-duration: .5s;
-	animation-fill-mode: forwards;
-	opacity: 1;
+	// animation-name: zoomIn;
+	// animation-duration: .5s;
+	// animation-fill-mode: forwards;
+	// opacity: 1;
+	display: block;
 }
 .page-tooltip:hover span{
 	color: @red;

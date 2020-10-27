@@ -1,5 +1,6 @@
 .loan-card__inner{
-  display: block;
+  display: block;padding-bottom: 50px;
+  height: 100%;
 }
 .loan-card {
   
@@ -11,7 +12,7 @@
   overflow: hidden;
   background: #FFFFFF;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
-  padding-bottom: 50px;
+  
   @media (max-width: 1364px) {
     width: 300px;
   }
@@ -78,6 +79,9 @@
     position: absolute;
     bottom: 59px;
     right: 65px;
+    @media(max-width:1364px){
+      right: 35px;
+    }
   }
 }
 
@@ -193,11 +197,17 @@
     }
 
     .button-light {
-      margin-left: 30px;
+      position: absolute;
+    right: 35px;
+    bottom: 50px;
     }
 
     .button-link {
       display: none;
     }
   }
+}
+.loan-card__inner:hover .head-4{
+  color: @red;
+  border-color: rgba(229, 69, 69, .2);;
 }
