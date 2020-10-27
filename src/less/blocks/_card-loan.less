@@ -1,4 +1,8 @@
+.loan-card__inner{
+  display: block;
+}
 .loan-card {
+  
   width: 400px;
   height: 530px;
   .ma;
@@ -22,7 +26,12 @@
     left: 20px;
   }
 }
-
+.loan-card .page-button{
+  position: absolute;
+  left: 25px;
+  bottom: 50px;
+  z-index: 10;
+}
 .loan-card__head {
   box-shadow: 0 4px 4px rgba(0, 0, 0, .25);
   background-position: center;
@@ -65,7 +74,10 @@
     color: @blue;
     border-bottom: 1px solid @blueOp;
     padding-bottom: 4px;
-    margin-left: 40px;
+    margin-left: auto;
+    position: absolute;
+    bottom: 59px;
+    right: 65px;
   }
 }
 

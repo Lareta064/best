@@ -2,6 +2,7 @@ $(document).ready(function () {
     // show more offer cards
     let hideOfferCards = document.querySelectorAll('.hide-card');
     const btnShowOfferCards = document.querySelector('#show-cards');
+    const bodyEl = document.body;
     if(btnShowOfferCards){
         btnShowOfferCards.addEventListener('click', function(){
             for(item of hideOfferCards){
@@ -12,24 +13,19 @@ $(document).ready(function () {
     }
     //click on toggle-menu
     const menuToggle = document.querySelector('.menu-toggle');
+    const mobMenu = document.querySelector('#mobile-menu');
+    const btnCloseMobMenu  = document.querySelector('#close-btn')
     menuToggle.addEventListener('click', function () {
-        if (this.classList.contains('active')) {
-
-            this.classList.remove('active');
-            // mobMenu.classList.remove('active');
-
-            // overlayBlock.classList.remove('active');
-            // bodyEl.classList.remove('noscroll');
-
-        } else {
-            this.classList.add('active');
-            // mobMenu.classList.add('active');
-            // overlayBlock.classList.add('active');
-            // bodyEl.classList.add('noscroll');
-
-        }
+        mobMenu.classList.add('active');
+        bodyEl.classList.add('noscroll');
+        
     });
 
+    // close-mobile menu
+    btnCloseMobMenu.addEventListener('click', function(){
+        mobMenu.classList.remove('active');
+        bodyEl.classList.remove('noscroll');
+    })
     // CUSTOM FORM SELECT
 	const selectElement = document.querySelectorAll('.form-select');
 	if (selectElement) {
@@ -82,5 +78,8 @@ $(document).ready(function () {
     //FORM RANGE INPUT 
     document.querySelector('#amount-val').innerHTML = 10000;
     document.querySelector('#income-val').innerHTML = 50000;
+
+    //custom scroll for mobile menu
+    document.querySelector('.scroll-outside').fakeScroll();
 
 })
