@@ -1,4 +1,9 @@
+.loan-card__inner{
+  display: block;padding-bottom: 50px;
+  height: 100%;
+}
 .loan-card {
+  
   width: 400px;
   height: 530px;
   .ma;
@@ -7,7 +12,7 @@
   overflow: hidden;
   background: #FFFFFF;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
-  padding-bottom: 50px;
+  
   @media (max-width: 1364px) {
     width: 300px;
   }
@@ -22,7 +27,12 @@
     left: 20px;
   }
 }
-
+.loan-card .page-button{
+  position: absolute;
+  left: 25px;
+  bottom: 50px;
+  z-index: 10;
+}
 .loan-card__head {
   box-shadow: 0 4px 4px rgba(0, 0, 0, .25);
   background-position: center;
@@ -35,7 +45,9 @@
 .loan-card__title {
   .flex;
   justify-content: space-between;
-
+  .page-tooltip span{
+    background-color:  #F1F1F1;
+  }
   .head-4 {
     color: @blue;
     border-bottom: 1px solid rgba(77, 124, 254, .2);
@@ -63,7 +75,13 @@
     color: @blue;
     border-bottom: 1px solid @blueOp;
     padding-bottom: 4px;
-    margin-left: 40px;
+    margin-left: auto;
+    position: absolute;
+    bottom: 59px;
+    right: 65px;
+    @media(max-width:1364px){
+      right: 35px;
+    }
   }
 }
 
@@ -179,11 +197,17 @@
     }
 
     .button-light {
-      margin-left: 30px;
+      position: absolute;
+    right: 35px;
+    bottom: 50px;
     }
 
     .button-link {
       display: none;
     }
   }
+}
+.loan-card__inner:hover .head-4{
+  color: @red;
+  border-color: rgba(229, 69, 69, .2);;
 }
