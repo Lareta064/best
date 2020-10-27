@@ -1,25 +1,45 @@
 form.contact-form(action="#")
 	.form-body
 		.form-item
-			label Loan Purpose
+			.form-item__label
+				label Loan Purpose
+				.page-tooltip
+					span ?
+					.page-tooltip__box
+						p Lenders often determine loan approval based on combo of loan purpose & amount
 			.form-select
 				.form-select__icon
 					+selectArr
-				input(type="text" name="" placeholder="Home Improvements" autocomplete="off")
+				input(type="text" name="" placeholder="Home Improvements" autocomplete="off" readonly)
 				ul.form-select__options
-					li select item
-					li select item
-					li select item
-					li select item
+					li Debt consolidation loan
+					li.active Home Improvement
+					li Student Loan
+					li Medical Expenses
+					li Large Purcases
+					li Special Occasion Credit Card
+					li Consolidation
+					li Loan Other
+					       
 		.form-item
-			label Loan Amount
+			.form-item__label
+				label Loan Amount
+				.page-tooltip
+					span ?
+					.page-tooltip__box
+						p Lenders often determine loan approval based on combo of loan purpose & amount
 			.form-range
 				.form-range-value.d-flex
 					span $
 					span#amount-val
 				input(type="range" min="0" max="30000" value="10000" oninput="document.getElementById('amount-val').innerHTML =this.value;")
 		.form-item
-			label Annual Income
+			.form-item__label
+				label Annual Income
+				.page-tooltip
+					span ?
+					.page-tooltip__box
+						p Lenders often determine loan approval based on combo of loan purpose & amount
 			.form-range
 				.form-range-value.d-flex
 					span $

@@ -38,7 +38,17 @@ $(document).ready(function () {
             const selectOptions = item.querySelector('.form-select__options');
             const selectArrow = item.querySelector('.form-select__icon');
 
+            selectInput.addEventListener('click', function () {
 
+                if (selectOptions.classList.contains('active')) {
+                    selectArrow.classList.remove('rotate');
+                    selectOptions.classList.remove('active');
+                } else {
+                    selectArrow.classList.add('rotate');
+                    selectOptions.classList.add('active');
+                }
+
+            });
 
             selectArrow.addEventListener('click', function () {
 
@@ -54,9 +64,14 @@ $(document).ready(function () {
 
             //click on select dropdown
             selectOptions.addEventListener('click', function (e) {
+                const itemsArr = this.querySelectorAll('li');
+                for(item of itemsArr){
+                    item.classList.remove('active');
+                }
                 if (e.target.tagName == 'LI') {
                     selectInput.value = e.target.textContent;
                     this.classList.remove('active');
+                    e.target.classList.add('active');
                     selectArrow.classList.remove('rotate');                    
                 }
             });
