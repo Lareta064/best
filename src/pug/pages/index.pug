@@ -1,17 +1,13 @@
 extends ../layouts/layout.pug
 
 block content
-    +header([{link: "index.html", title: "Top 10", addClass: 'active'}, {
-        link: "review.html",
-        title: "Reviews"
-    }, {link: "methodology.html", title: "Peer to Peer"}, {link: "#", title: "Comparison"}, {
-        link: "#",
-        title: "Learn"
-    }])
+    +header([{link: "index.html", title: "Top 10", addClass: 'active'}, {link: "review.html",
+        title: "Reviews" }, {link: "methodology.html", title: "Peer to Peer"}, {link: "#", title: "Comparison"}, {link: "#", title: "Learn" }])
     include ../sections/main/_header-banner
     include ../sections/_card-loan.pug
     include ../sections/_card-articles.pug
     include ../sections/_footer.pug
+    include ../sections/_modal.pug
 
 
 block variables
