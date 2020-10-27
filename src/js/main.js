@@ -22,10 +22,13 @@ $(document).ready(function () {
     });
 
     // close-mobile menu
-    btnCloseMobMenu.addEventListener('click', function(){
-        mobMenu.classList.remove('active');
-        bodyEl.classList.remove('noscroll');
-    })
+    if(btnCloseMobMenu){
+       btnCloseMobMenu.addEventListener('click', function(){
+            mobMenu.classList.remove('active');
+            bodyEl.classList.remove('noscroll');
+        });
+    }
+    
     // CUSTOM FORM SELECT
 	const selectElement = document.querySelectorAll('.form-select');
 	if (selectElement) {
@@ -81,5 +84,14 @@ $(document).ready(function () {
 
     //custom scroll for mobile menu
     document.querySelector('.scroll-outside').fakeScroll();
+    
+    //footer-accordion
+    $('.accordion-card__body').hide();
+    $('.accordion-card__head').on('click', function(){
+        $('.accordion-card__head p').toggleClass("active");
+        $('.accordion-card__body').toggle(500);
+        $('.accordion-card__icon').toggleClass("rotate");
+    });
+    
 
 })

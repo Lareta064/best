@@ -89,27 +89,7 @@
 		  }
 	}
 }
-.footer-select{
-	
-	@media(max-width:767px){
-	padding-right: 20px;	
-	}
-	margin-top: 40px;
-	.form-select__options{
-		position: relative;
-		transform: translateY(0);
-	}
-	.form-select{
-		height: auto;
-		input{
-			background:rgba(255,255,255, .1);			
-			border-radius: 4px;
-			color: #fff;
-			border-color: transparent;
-			
-		}
-	}
-}
+
 .footer-copyright{
 	padding-top: 30px;
 	padding-bottom: 50px;
@@ -150,3 +130,52 @@ background-color: #282D6F;
 			display: none;
 		}
 	}
+.accordion-block{
+	background:rgba(255,255,255, .1);
+	border-radius: 4px;
+	margin-top: 36px;
+	
+}
+.accordion-block .accordion-text p, .text-20 p{
+	color: #fff;
+
+}
+.accordion-card__icon{
+	.tr;
+	&.rotate{
+		svg{
+			transform: rotate(180deg);
+		}
+		path{
+			fill: #fff;
+		}
+	}
+}
+.accordion-block__card{
+	position: relative;
+}
+.accordion-card__body{
+	padding-bottom: 30px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 5px;
+}
+.accordion-card__head{
+	height: 50px;
+	padding-left: 30px;
+	padding-right: 30px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	p{
+		
+		&.active{
+			width: fit-content;
+			border-bottom: 1px dashed rgba(255, 255, 255, .2);
+		}
+	}
+	
+}
+.accordion-card__head p{
+	color: #fff;
+}
