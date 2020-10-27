@@ -18,7 +18,7 @@ $(document).ready(function () {
     menuToggle.addEventListener('click', function () {
         mobMenu.classList.add('active');
         bodyEl.classList.add('noscroll');
-
+        
     });
 
     // close-mobile menu
@@ -68,30 +68,28 @@ $(document).ready(function () {
                     selectInput.value = e.target.textContent;
                     this.classList.remove('active');
                     e.target.classList.add('active');
-                    selectArrow.classList.remove('rotate');
+                    selectArrow.classList.remove('rotate');                    
                 }
             });
         }
         }
-
-
+		
+    
     //FORM RANGE INPUT 
     document.querySelector('#amount-val').innerHTML = 10000;
     document.querySelector('#income-val').innerHTML = 50000;
 
+    //custom scroll for mobile menu
+    document.querySelector('.scroll-outside').fakeScroll();
 
-//custom scroll for mobile menu
-document.querySelector('.scroll-outside').fakeScroll();
-
-
-//accordion
-$('.collapse').each(function () {
-    $(this).on('show.bs.collapse', function () {
-        $(this).siblings('.card-header').children('.accordion-icon').addClass('active');
+    //accordion
+    $('.collapse').each(function () {
+        $(this).on('show.bs.collapse', function () {
+            $(this).siblings('.card-header').children('.accordion-icon').addClass('active');
+        });
+        $(this).on('hide.bs.collapse', function () {
+            $(this).siblings('.card-header').children('.accordion-icon').removeClass('active');
+        })
     });
-    $(this).on('hide.bs.collapse', function () {
-        $(this).siblings('.card-header').children('.accordion-icon').removeClass('active');
-    })
-});
 
 })
