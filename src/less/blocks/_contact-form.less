@@ -1,14 +1,21 @@
 .contact-form{
 	border-radius: 10px;
 	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
-	overflow: hidden;
+	// overflow: hidden;
+	.form-item__label{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 10px;
+	}
 	label{
 		display: block;
 		font-size: 16px;
 		line-height: 20px;
 		color:@formtext ;
-		margin-bottom: 10px;
+		margin-bottom: 0px;
 		font-weight: 700;
+		
 	}
 	.form-item{
 		margin-bottom: 20px;
@@ -20,6 +27,7 @@
 	padding-right: 30px;
 	padding-bottom: 15px;
 	background-color: @bgform;
+	border-radius: 10px 10px 0 0 ;
 }
 .contact-form .form-footer{
 	padding-top: 20px;
@@ -27,6 +35,21 @@
 	padding-right: 30px;
 	padding-bottom: 40px;
 	background-color: @bgbottom;
+	border-radius: 0px 0px 10px 10px ;
+}
+.form-range:hover{
+	.form-range-value{
+		color: @blue;
+		
+	}
+	input[type=range]::-webkit-slider-runnable-track{
+		border-color: @blue;
+	}
+	input[type=range]::-webkit-slider-thumb{
+		border-color: @blue;
+		background-color: @blue;
+		box-shadow: 0px 5px 10px rgba(77, 124, 254, 0.35);
+	}
 }
 .form-range .form-range-value{
 	height: 50px;
@@ -96,6 +119,7 @@ input[type=range]::-webkit-slider-thumb {
 		background-color:#fff;
 		padding: 8px 20px;
 		border: 1px solid #E5D1C5;
+		border-top:0px;
 
 	}
 }
@@ -105,28 +129,41 @@ input[type=range]::-webkit-slider-thumb {
 	z-index: 5;
 	position: absolute;
 	left: 0;
-	bottom: -3px;
+	bottom: 2px;
 	transform: translateY(100%);
 	padding: 0px 15px 15px 0;
 	
 	background: #fff;
-	border-radius: 4px;
+	border-radius:0 0 4px 4px;
 	-webkit-animation-name: showSlow;
 	animation-name: showSlow;
 	-webkit-animation-duration: .5s;
 	animation-duration: .5s;
 	display: none;
-
+	
+	&:before{
+		content:'';
+		left: 20px;
+		right: 20px;
+		height: 1px;
+		position: absolute;
+		top: 0;
+		background-color:  #E6E6E6;
+	}
 	li {
 		
-		color: #000;
+		color:@blue;
+		font-size: 14px;
+		line-height: 20px;
+		font-weight: 700;
+		.tr;
 		cursor: pointer;
 		padding-top: 5px;
 		padding-bottom: 5px;
 
-		&.active,
+		&.active{color:#ccc ;}
 		&:hover {
-			opacity: .7;
+			color: @red;
 		}
 
 	}
@@ -161,6 +198,7 @@ input[type=range]::-webkit-slider-thumb {
 .form-select__icon.rotate {
 	svg {
 		transform: rotate(180deg);
+		path{fill:#4D7CFE; ;}
 		
 	}
 
