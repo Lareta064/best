@@ -3,6 +3,8 @@ extends ../layouts/layout.pug
 block content
 	+header([{link: "index.html", title: "Top 10"}, {link: "review.html", title: "Reviews"}, {link: "methodology.html", title: "Peer to Peer", addClass: 'active'}, {link: "#", title: "Comparison"}, {link: "#", title: "Learn"}])
 	include ../sections/method/_header-banner
+	include ../sections/method/_faq
+	include ../sections/method/_card-articles
 	include ../sections/_footer.pug
 
 block variables
