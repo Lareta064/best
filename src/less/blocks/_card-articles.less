@@ -2,6 +2,7 @@
   display: block;
   justify-content: space-between;
 
+
   .head-4 h4 {
     @media (min-width: 992px) and (max-width: 1364px) {
       font-size: 18px;
@@ -24,6 +25,12 @@
   background: #FFFFFF;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
   padding-bottom: 55px;
+
+  &:hover {
+    .head-4 h4 {
+      color: @red;
+    }
+  }
 
   @media (max-width: 1199px) {
     max-width: 300px;
@@ -49,7 +56,7 @@
   padding-right: 40px;
   padding-left: 30px;
 
-  @media(min-width: 768px) and (max-width: 1199px){
+  @media (min-width: 768px) and (max-width: 1199px) {
     padding-right: 30px;
   }
 }
