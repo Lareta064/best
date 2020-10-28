@@ -22,10 +22,12 @@ mixin floatHeader
 			.header-content
 				.header-left
 					a(href="index.html").logo bestofpersonalloans.com
-					a(href="#!").text-link Credible Review
+					a(href="#!").text-link.d-none.d-lg-block Credible Review
 				.header-right
 					a(href="#!").page-button#float-btn  Get your rate now
 					a(href="index.html").button-light Close
+					a(href="index.html").page-close.d-flex.d-md-none
+						+close
 
 mixin offerCards
 	.offer-cards

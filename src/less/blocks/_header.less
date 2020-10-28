@@ -121,6 +121,8 @@
 	background: #F4FBFF;
 	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
 	.header-left {
+		display: flex;
+		align-items: center;
 		.logo {
 			margin-right: 60px;
 		}
@@ -137,16 +139,71 @@
 	}
 
 	.header-right {
+		display: flex;
+		align-items: center;
 		.button-light {
 			margin-left: 30px;
 			padding-left: 30px;
 			padding-right: 30px;
+			display: inline-block;
+			@media(max-width:1199px){
+				height: 40px;
+				line-height: 38px;
+			}
+			@media(max-width:767px){
+				display: none;
+				.page-close{
+					width: 50px;
+					height: 50px;
+					padding: 20px;
+					background-color: @purple;
+					display: flex;
+				}
+			}
 		}
+		@media(max-width:767px){
+			
+			.page-close{
+				min-width: 50px;
+				min-height: 50px;
+				position: absolute;
+				top: 0;
+				right: 0;
+				
+				background-color: @purple;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				svg{
+					width: 25px;
+					height: 25px;
+					.tr;
+					path{
+						fill: #fff;
+						opacity: 1;
+					}
+				}
+				&:hover{
+					svg{
+						transform: rotate(180deg);
+					}
+				}
+			}
+		}
+
 		.page-button{
 			padding-left: 35px;
 			padding-right: 35px;
 			display: none;
+			white-space: nowrap;
 			&.active{display: inline-block;}
+			@media(max-width:1199px){
+				padding-right: 15px;
+				padding-left: 15px;
+				text-align: center;
+				height: 40px;
+				line-height: 40px;
+			}
 			@media(max-width:767px){
 				&.active{display: none;}
 		}
