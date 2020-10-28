@@ -148,4 +148,15 @@ $(document).ready(function () {
         })
     });
 
+    //replacing the modalForm title when clicking on contact-card 
+    let contactCards =  document.querySelectorAll('.contact-card');
+    let modalTitle =  document.querySelector('#modal-title');
+    if(contactCards){
+        for(item of contactCards){
+            const itemTitle = item.querySelector('h4').textContent;
+            item.addEventListener('click', function(){
+                modalTitle.innerHTML =  itemTitle;
+            });
+        }
+    }
 })
