@@ -6,7 +6,7 @@
     cursor: pointer;
     background-color: #F4FBFF;
 
-    .title-4 h4 {
+    .title-4 {
       margin-bottom: 30px;
 
       @media (max-width: 767px) {
@@ -39,20 +39,25 @@
       top: 10px;
     }
   }
-  
+
   .card-header {
     padding: 0;
     border-bottom: 0;
     background-color: transparent;
 
-    .head-4 h4 {
+    .head-4 {
       color: #000000;
+      border: none;
+      margin-bottom: 20px;
     }
   }
 
   .card-header.collapsed {
-    .head-4 h4 {
+    .head-4 {
       color: @blue;
+      border-bottom: 1px dashed @blueOp;
+      width: fit-content;
+
     }
   }
 
@@ -61,13 +66,6 @@
     border: 0;
     border-radius: 0;
     margin-bottom: 30px;
-  }
-
-  .head-4 h4 {
-    color: @blue;
-    border-bottom: 1px dashed @blueOp;
-    width: fit-content;
-    margin-bottom: 20px;
   }
 
   .text-paragraph p + p {
