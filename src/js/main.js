@@ -1,14 +1,17 @@
 $(document).ready(function () {
     //pageReview floating button
     const headerFloatingBtn = document.querySelector('#float-btn');
-    window.addEventListener('scroll', function(){
-        if(this.pageYOffset >10){
-            headerFloatingBtn.classList.add('active');
-        }
-        else{
-            headerFloatingBtn.classList.remove('active'); 
-        }
-    })
+    if(headerFloatingBtn){
+        window.addEventListener('scroll', function(){
+            if(this.pageYOffset >10){
+                headerFloatingBtn.classList.add('active');
+            }
+            else{
+                headerFloatingBtn.classList.remove('active'); 
+            }
+        });     
+    }
+
     // click for show more offer cards
     let hideOfferCards = document.querySelectorAll('.hide-card');
     const btnShowOfferCards = document.querySelector('#show-cards');
