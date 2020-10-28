@@ -134,11 +134,20 @@ background-color: #282D6F;
 	background:rgba(255,255,255, .1);
 	border-radius: 4px;
 	margin-top: 36px;
+	@media(max-width:767px){
+		margin-right: 20px;
+	}
 	
 }
 .accordion-block .accordion-text p, .text-20 p{
 	color: #fff;
 
+}
+.accordion-text.text-20{
+	@media(max-width:991px){
+		font-size: 18px;
+		margin-top: 10px;
+	}
 }
 .accordion-card__icon{
 	.tr;
@@ -167,6 +176,7 @@ background-color: #282D6F;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	cursor:pointer;
 	p{
 		
 		&.active{

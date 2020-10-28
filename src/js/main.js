@@ -79,11 +79,17 @@ $(document).ready(function () {
 		
     
     //FORM RANGE INPUT 
-    document.querySelector('#amount-val').innerHTML = 10000;
-    document.querySelector('#income-val').innerHTML = 50000;
+    if(document.querySelector('#amount-val') || document.querySelector('#income-val')){
+      document.querySelector('#amount-val').innerHTML = 10000;
+    document.querySelector('#income-val').innerHTML = 50000;  
+    }
+    
 
     //custom scroll for mobile menu
-    document.querySelector('.scroll-outside').fakeScroll();
+    if(document.querySelector('.scroll-outside')){
+       document.querySelector('.scroll-outside').fakeScroll(); 
+    }
+    
     
     //footer-accordion
     $('.accordion-card__body').hide();
@@ -92,6 +98,31 @@ $(document).ready(function () {
         $('.accordion-card__body').toggle(500);
         $('.accordion-card__icon').toggleClass("rotate");
     });
-    
+    //modal form input
+    const modalFormInputs = document.querySelectorAll('.modal-form input');
+    const modalFormTextarea = document.querySelector('.modal-form textarea');
+    if(modalFormInputs){
+         for(item of modalFormInputs){
+        item.addEventListener('blur', function(){
+            if(this.value !== ''){
+                this.classList.add('valid');
+            }
+            else{
+                this.classList.remove('valid');
+            }
+        });
+     }   
+    }
+    if(modalFormTextarea){
+       modalFormTextarea.addEventListener('blur', function(){
+            if(this.value !== ''){
+                this.classList.add('valid');
+            }
+            else{
+                this.classList.remove('valid');
+            }
+        });  
+    }
+   
 
 })
