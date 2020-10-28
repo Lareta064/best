@@ -15,6 +15,18 @@ mixin header(arg)
 				a(href="#!").header-button.button-light.w-200  The Very Best of ...
 				.menu-toggle
 					span
+
+mixin floatHeader
+	header.header.header-floating
+		.container
+			.header-content
+				.header-left
+					a(href="index.html").logo bestofpersonalloans.com
+					a(href="#!").text-link Credible Review
+				.header-right
+					a(href="#!").page-button#float-btn  Get your rate now
+					a(href="index.html").button-light Close
+
 mixin offerCards
 	.offer-cards
 		.row
