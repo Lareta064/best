@@ -1,28 +1,5 @@
-.accordion-icon.active svg {
-  transform: rotate(180deg);
-  path{
-    fill: @blue;
-  }
-}
-
-.accordion-icon svg {
-  position: absolute;
-  top: 25px;
-  right: 442px;
-  transition: 0.5s;
-
-  @media(max-width: 1199px){
-    top: 7px;
-    right: 310px;
-  }
-
-  @media(max-width: 991px){
-    right: 0;
-    top: 10px;
-  }
-}
-
 .faq {
+
   position: relative;
 
   .faq-content {
@@ -37,24 +14,49 @@
       }
     }
   }
-}
 
-  .card-header{
+  .accordion-icon.active svg {
+    transform: rotate(180deg);
+
+    path {
+      fill: @blue;
+    }
+  }
+
+  .accordion-icon svg {
+    position: absolute;
+    top: 25px;
+    right: 442px;
+    transition: 0.5s;
+
+    @media (max-width: 1199px) {
+      top: 7px;
+      right: 310px;
+    }
+
+    @media (max-width: 991px) {
+      right: 0;
+      top: 10px;
+    }
+  }
+  
+  .card-header {
     padding: 0;
     border-bottom: 0;
     background-color: transparent;
-    .head-4 h4{
+
+    .head-4 h4 {
       color: #000000;
     }
   }
 
-  .card-header.collapsed{
-    .head-4 h4{
+  .card-header.collapsed {
+    .head-4 h4 {
       color: @blue;
     }
   }
 
-  .card{
+  .card {
     background-color: transparent;
     border: 0;
     border-radius: 0;
@@ -72,11 +74,12 @@
     padding-top: 20px;
   }
 
-  .text-20 p{
+  .text-20 p {
     color: @purple;
 
-    @media(max-width: 991px){
+    @media (max-width: 991px) {
       margin-top: 30px;
       margin-bottom: 30px;
     }
   }
+}
