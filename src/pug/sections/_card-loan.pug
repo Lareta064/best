@@ -4,11 +4,13 @@ section.loan-offers
 			h2 Top-3 best personal loans for you
 		.loan-cards
 			.row
+				//cred card
 				.col-lg-4
-					.loan-card.loan-card-1
+					.loan-card.loan-card--cred
 						a(href="review.html").loan-card__inner
-							.card-label Best APR 111
-							.loan-card__head(style="background-image: url(img/cards/credible.jpg)")
+							.card-label Best APR
+							.loan-card__head
+								img(src="img/logo/1.png", alt="logo")
 								
 							.loan-card__body
 								.loan-card__title
@@ -40,11 +42,13 @@ section.loan-offers
 								.button-link Review
 								.button-light Review the offer
 						a(href="#!" data-toggle="modal" data-target="#modalForm").page-button.w-200 Get your rate
+				//free card
 				.col-md-6.col-lg-4
-					.loan-card.loan-card-2
+					.loan-card.loan-card--lfree
 						a(href="review.html").loan-card__inner
 							.card-label Best loan term
-							.loan-card__head(style="background-image: url(img/cards/lendingtree.jpg)")
+							.loan-card__head
+								img(src="img/logo/2.png", alt="logo")
 								
 							.loan-card__body
 								.loan-card__title
@@ -74,12 +78,13 @@ section.loan-offers
 							.loan-card__footer
 								.button-link Review
 						a(href="#!").page-button.w-200 Get your rate
-				
+				//club card
 				.col-md-6.col-lg-4
-					.loan-card.loan-card-3
+					.loan-card.loan-card--lclub
 						a(href="review.html").loan-card__inner
 							.card-label.card-label--orange Best rating
-							.loan-card__head(style="background-image: url(img/cards/Lendingclub.jpg)")
+							.loan-card__head
+								img(src="img/logo/3.png", alt="logo")
 							.loan-card__body
 								.loan-card__title
 									.head-4

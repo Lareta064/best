@@ -150,22 +150,44 @@
 
 .loan-cards {
   margin-bottom: 100px;
+  
 }
-
-.loan-card-1 .loan-card__head {
+.loan-card__head{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loan-card__head img{
+  width: 70%;
+}
+.loan-card--cred .loan-card__head {
   background-color: #2156A4;
 
 }
 
-.loan-card-2 .loan-card__head {
+.loan-card--lfree .loan-card__head {
   background-color: #0F1F2F;
 }
 
-.loan-card-3 .loan-card__head {
+.loan-card--lclub .loan-card__head {
   background-color: #0e3c60;
 }
-
-.loan-card.loan-card-1 {
+.loan-card--amon{
+  background-color: #fff;
+  .loan-card__head{
+    border: 5px solid @purple;
+  }
+}
+.loan-card--funds .loan-card__head{
+  background-color: #050A0D;
+}
+.loan-card--upgrade .loan-card__head{
+  background-color: #00a669;
+  img{
+    width: 60%;
+  }
+}
+.loan-card.loan-card--cred {
   .button-light {
     display: none;
   }
