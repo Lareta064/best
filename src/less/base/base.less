@@ -110,8 +110,7 @@ input, input:focus, button, button:focus, input::placeholder {
   }
 }
 .section-head h2,
-.section-title h2
- {
+.section-title h2 {
   font-size: 40px;
   line-height: 1.22;
   color: @purple;
@@ -145,11 +144,16 @@ input, input:focus, button, button:focus, input::placeholder {
   }
 }
 .article-title h3,
+.section-title h2,
 .title-4 h4 {
   font-size: 34px;
   line-height: 1.23;
   color: @purple;
   font-weight: 900;
+
+  @media(max-width: 767px){
+    font-size: 24px;
+  }
 }
 
 .head-4 h4 {
