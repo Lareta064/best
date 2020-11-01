@@ -18,16 +18,7 @@
 		display: none;
 	  }
 }
-// .compares-content:after{
-// 	content: '';
-// 	position: absolute;
-// 	left: 0;
-// 	top: 14px;
-// 	height: 1px;
-// 	width: 850px;	
-// 	background-color:  rgba(0,0,0, .15);
-	
-// }
+
 .compares-table table{
 	width: 850px;
 	@media(max-width: 579px){width: 550px;}
@@ -66,9 +57,16 @@
 .compare-articles__item +.compare-articles__item{
 	margin-top: 50px;
 }
+.article-author__photo{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	overflow: hidden;
+}
 .articles-author-info{
 	padding-bottom: 50px;
-	border-bottom: 1px solid rgba(0,0,0, 15);
+	border-bottom: 1px solid rgba(0,0,0, 0.15);
+	margin-bottom: 100px;
 	h5{
 		font-size: 20px;
 		color: @purple;
