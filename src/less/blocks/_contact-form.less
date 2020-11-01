@@ -68,6 +68,9 @@
 		color: @blue;
 		
 	}
+	.range-line{
+		background-color: @blue;
+	}
 	input[type=range]::-webkit-slider-runnable-track{
 		border-color: @blue;
 	}
@@ -75,6 +78,7 @@
 		border-color: @blue;
 		background-color: @blue;
 		box-shadow: 0px 5px 10px rgba(77, 124, 254, 0.35);
+		cursor: grabbing;
 	}
 }
 .form-range .form-range-value{
@@ -95,7 +99,7 @@ input[type=range]{
 input[type=range]::-webkit-slider-runnable-track {
 	border-radius: 10px;
 	height: 1px;
-	border: 1px solid @green;
+	// border: 1px solid @green;
 	background-color:#E5D1C5;
 	}
 input[type=range]::-webkit-slider-thumb {
@@ -108,10 +112,24 @@ input[type=range]::-webkit-slider-thumb {
 	cursor: pointer;
 	margin-top: -10px;
 	}
+
 .form-range input{
 	width: 100%;
 	position: relative;
 	top: -14px;
+	
+}
+.range-input-inner{
+	position: relative;
+	.range-line{
+		position: absolute;
+		left: 1px;
+		top: 0;
+		// width: 100px;
+		height: 2px;
+		background-color:@green;
+	}
+	
 }
 .form-select {
 	position: relative;

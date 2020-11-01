@@ -99,7 +99,33 @@ $(document).ready(function () {
     //FORM RANGE INPUT 
     if(document.querySelector('#amount-val') || document.querySelector('#income-val')){
       document.querySelector('#amount-val').innerHTML = 10000;
-    document.querySelector('#income-val').innerHTML = 50000;  
+        document.querySelector('#income-val').innerHTML = 50000; 
+        const rangeLine1 = document.getElementById('range-line1');
+        const rangeLine2 = document.getElementById('range-line2');
+        let range1 = document.getElementById('range-1');
+        let range2 = document.getElementById('range-2');
+
+
+        
+        function colorLineForRangeInput(rangeInput, lineItem){
+            let maxVal = +rangeInput.getAttribute('max');
+            let currentVal = rangeInput.getAttribute('value');
+            let thisValue = +rangeInput.value;
+            let lineWidth = +(thisValue * 100 / maxVal) +'%';
+            lineItem.setAttribute("style",`width:${lineWidth}`);
+            rangeInput.addEventListener('input', function(){
+                // let maxVal = +this.getAttribute('max');
+                // let currentVal = this.getAttribute('value');
+                let thisValue = +this.value;
+                let lineWidth = +(thisValue * 100 / maxVal) +'%';
+                lineItem.setAttribute("style",`width:${lineWidth}`);
+                
+            }); 
+        }
+        colorLineForRangeInput(range1, rangeLine1);
+        colorLineForRangeInput(range2, rangeLine2);
+        
+
     }
     
 
