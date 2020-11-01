@@ -32,10 +32,12 @@ form.contact-form(action="#")
 				.form-range-value.d-flex
 					span $
 					span#amount-val
-				input(type="range" min="0" max="30000" value="10000" oninput="document.getElementById('amount-val').innerHTML =this.value;")
+				.range-input-inner
+					input(type="range" min="0" max="30000" value="10000" oninput="document.getElementById('amount-val').innerHTML =this.value;" id="range-1")
+					.range-line#range-line1
 		.form-item
 			.form-item__label
-				label Annual Income
+				label Loan Amount
 				.page-tooltip
 					span ?
 					.page-tooltip__box
@@ -44,6 +46,8 @@ form.contact-form(action="#")
 				.form-range-value.d-flex
 					span $
 					span#income-val
-				input(type="range" min="0" max="200000" value="50000" oninput="document.getElementById('income-val').innerHTML =this.value;") 
+				.range-input-inner
+					input(type="range" min="0" max="200000" value="50000" oninput="document.getElementById('income-val').innerHTML =this.value;" id="range-2" )
+					.range-line#range-line2 
 	.form-footer
 		button(type="submit").page-button.w-100 Find my best loan
