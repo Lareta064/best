@@ -19,6 +19,7 @@ $(document).ready(function () {
     let hideOfferCards = document.querySelectorAll('.hide-card');
     const btnShowOfferCards = document.querySelector('#show-cards');
     const bodyEl = document.body;
+    const overlayEl = document.querySelector('#overlay');
     if(btnShowOfferCards){
         btnShowOfferCards.addEventListener('click', function(){
             for(item of hideOfferCards){
@@ -36,6 +37,7 @@ $(document).ready(function () {
     menuToggle.addEventListener('click', function () {
         mobMenu.classList.add('active');
         bodyEl.classList.add('noscroll');
+        overlayEl.classList.add('active');
         
     });
 
@@ -44,6 +46,7 @@ $(document).ready(function () {
        btnCloseMobMenu.addEventListener('click', function(){
             mobMenu.classList.remove('active');
             bodyEl.classList.remove('noscroll');
+            overlayEl.classList.remove('active');
         });
     }
 }
@@ -104,8 +107,6 @@ $(document).ready(function () {
         const rangeLine2 = document.getElementById('range-line2');
         let range1 = document.getElementById('range-1');
         let range2 = document.getElementById('range-2');
-
-
         
         function colorLineForRangeInput(rangeInput, lineItem){
             let maxVal = +rangeInput.getAttribute('max');
@@ -124,8 +125,6 @@ $(document).ready(function () {
         }
         colorLineForRangeInput(range1, rangeLine1);
         colorLineForRangeInput(range2, rangeLine2);
-        
-
     }
     
 

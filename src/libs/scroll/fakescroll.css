@@ -1,10 +1,16 @@
 .fakeScroll { 
 	position: relative; 
 	margin: 20px auto; 
-	height: 400px;  
+	height: auto;  
 	width: 100%; 
 	overflow: auto; 
+	
 	/* background: white;  */
+}
+@media(max-height:767px){
+	.fakeScroll{
+		height: 400px; 
+	}
 }
 .fakeScroll__scope { 
 	overflow:visible !important; 
