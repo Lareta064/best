@@ -48,6 +48,16 @@ $(document).ready(function () {
             bodyEl.classList.remove('noscroll');
             overlayEl.classList.remove('active');
         });
+        mobMenu.addEventListener('click', function(){
+           this.classList.remove('active');
+            bodyEl.classList.remove('noscroll');
+            overlayEl.classList.remove('active');
+        });
+        window.addEventListener('resize', function(){
+            mobMenu.classList.remove('active');
+            bodyEl.classList.remove('noscroll');
+            overlayEl.classList.remove('active');
+        });
     }
 }
     // CUSTOM FORM SELECT
