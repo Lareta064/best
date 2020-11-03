@@ -21,10 +21,12 @@ body {
   background-color: #F4FBFF;
 
 }
-.noscroll{
+
+.noscroll {
   overflow: hidden;
 }
-#overlay{
+
+#overlay {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -32,13 +34,15 @@ body {
   right: 0;
   z-index: 2;
   opacity: .9 !important;
-	background-color:#282D6F;
+  background-color: #282D6F;
   display: none;
-  &.active{
+
+  &.active {
     display: block;
   }
   
 }
+
 a,
 a:hover {
   text-decoration: none;
@@ -132,33 +136,38 @@ input, input:focus, button, button:focus, input::placeholder {
   color: @purple;
   font-weight: 900;
 }
-.section-title{
+
+.section-title {
   margin-bottom: 40px;
 }
+
 .title-3 h3,
-.section-title h2{
+.section-title h2 {
   color: @purple;
   font-weight: 900;
   font-size: 34px;
-  @media(max-width:991px){
+  @media (max-width: 991px) {
     font-size: 34px;
   }
-  @media(max-width:767px){
+  @media (max-width: 767px) {
     font-size: 24px;
   }
 }
-.block-title{
+
+.block-title {
   margin-bottom: 20px;
 }
-.block-title h3{
+
+.block-title h3 {
   font-size: 30px;
   line-height: 1.23;
   font-weight: 700;
-  @media(max-width:767px){
+  @media (max-width: 767px) {
     font-size: 20px;
     line-height: 1.4;
   }
 }
+
 .article-title h3,
 .section-title h2,
 .title-4 h4 {
@@ -167,7 +176,7 @@ input, input:focus, button, button:focus, input::placeholder {
   color: @purple;
   font-weight: 900;
 
-  @media(max-width: 767px){
+  @media (max-width: 767px) {
     font-size: 24px;
   }
 }
@@ -189,6 +198,7 @@ p {
   font-size: 30px;
   line-height: 1.2;
 }
+
 .article-title h4,
 .text-24 p {
   font-size: 24px;
@@ -209,29 +219,34 @@ p {
 
 
 //link
-.text-link{
+.text-link {
   color: @blue;
   border-bottom: 1px solid @blueOp;
 }
+
 //color text
-.text-bold p, p.text-bold{
+.text-bold p, p.text-bold {
   font-weight: 700;
 }
+
 .text-20.red-text p,
-.red-text, .red-text p{
-  color:@red ;
+.red-text, .red-text p {
+  color: @red;
 }
+
 .green-text,
-.green-text p{
- color: @green;
+.green-text p {
+  color: @green;
 }
-.bg-blue{
+
+.bg-blue {
   border-radius: 15px;
   background-color: @darkblue;
   padding: 30px;
 }
+
 //label
-.card-label{
+.card-label {
   border-radius: 4px;
   padding-left: 10px;
   padding-right: 10px;
@@ -241,11 +256,11 @@ p {
   color: #fff;
   display: inline-block;
   position: absolute;
-  
+
   background-color: @green;
 }
 
-.card-label.card-label--orange{
+.card-label.card-label--orange {
   background-color: @orange;
 }
 
