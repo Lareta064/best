@@ -115,8 +115,7 @@ $(document).ready(function () {
             let lineWidth = +(thisValue * 100 / maxVal) + '%';
             lineItem.setAttribute("style", `width:${lineWidth}`);
             rangeInput.addEventListener('input', function () {
-                // let maxVal = +this.getAttribute('max');
-                // let currentVal = this.getAttribute('value');
+                
                 let thisValue = +this.value;
                 let lineWidth = +(thisValue * 100 / maxVal) + '%';
                 lineItem.setAttribute("style", `width:${lineWidth}`);
