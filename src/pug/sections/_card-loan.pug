@@ -1,11 +1,12 @@
+//========== section ===========
 section.loan-offers
 	.container
 		.section-title
 			h2 Top-3 best personal loans&nbsp;for&nbsp;you
 		.loan-cards
 			.row
-				//cred card
-				.col-lg-4
+				//==========cred card===========
+				.col-md-6.col-lg-3
 					.loan-card.loan-card--cred
 						a(href="review.html").loan-card__inner
 							.card-label Best APR
@@ -42,8 +43,8 @@ section.loan-offers
 								.button-link Review
 								.button-light Review the offer
 						a(href="#!" data-toggle="modal" data-target="#modalForm").page-button.w-200 Get your rate
-				//free card
-				.col-md-6.col-lg-4
+				//==========free card===========
+				.col-md-6.col-lg-3
 					.loan-card.loan-card--lfree
 						a(href="review.html").loan-card__inner
 							.card-label Best loan term
@@ -78,8 +79,8 @@ section.loan-offers
 							.loan-card__footer
 								.button-link Review
 						a(href="#!").page-button.w-200 Get your rate
-				//club card
-				.col-md-6.col-lg-4
+				//==========club card===========
+				.col-md-6.col-lg-3
 					.loan-card.loan-card--lclub
 						a(href="review.html").loan-card__inner
 							.card-label.card-label--orange Best rating
@@ -113,5 +114,16 @@ section.loan-offers
 							.loan-card__footer
 								.button-link Review
 						a(href="#!").page-button.w-200 Get your rate
+				//==========last card===========
+				.col-md-6.col-lg-3
+					.card-fvi 
+						.card-fvi__img
+						.card-fvi__body
+							.card-fvi__label
+								p FVI
+							.card-fvi__text
+								p The Annual Percentage Rate (APR) is the cost you pay each year to borrow money, including fees, expressed as a percentage 
 		include _form-subscribe
+
+
 include _card-offer

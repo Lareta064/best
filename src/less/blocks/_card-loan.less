@@ -4,7 +4,7 @@
 }
 .loan-card {
   
-  width: 400px;
+  width: 300px;
   height: 530px;
   .ma;
   border-radius: 10px;
@@ -34,9 +34,9 @@
   z-index: 10;
 }
 .loan-card__head {
-  //box-shadow: 0 4px 4px rgba(0, 0, 0, .25);
+ 
   background-position: center;
-  height: 200px;
+  height: 170px;
   background-size: cover;
   background-repeat: no-repeat;
 
@@ -78,7 +78,7 @@
     margin-left: auto;
     position: absolute;
     bottom: 59px;
-    right: 65px;
+    right: 40px;
     @media(max-width:1364px){
       right: 35px;
     }
@@ -243,4 +243,42 @@
 .loan-card__inner:hover .head-4{
   color: @red;
   border-color: rgba(229, 69, 69, .2);
+}
+.card-fvi{
+  max-width:300px;
+
+}
+.card-fvi__img{
+  height: 250px;
+  background-color: #FFE8DB;
+}
+.card-fvi__body{
+  padding-top: 40px;
+}
+.card-fvi__label{
+  min-width: 50px;
+  height: 28px;
+  display: inline-block;
+  border-radius:4px;
+  text-transform: uppercase;
+  
+  font-size: 16px;
+  font-weight: 700;
+  color: @purple;
+  border: 1px solid @purple;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.card-fvi__text p{
+  font-size: 20px;
+  line-height: 1.4;
+  color: @purple;
+  padding-top: 10px;
+  padding-right: 20px;
+  font-weight: 700;
+  -webkit-line-clamp: 6;
+  display: -webkit-box; 
+  -webkit-box-orient: vertical;
+  overflow: hidden; 
 }
