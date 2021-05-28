@@ -5,18 +5,44 @@
 html {
   scroll-behavior: smooth;
 }
-
+.mr-20{
+  margin-right: 20px;
+}
 html,
 body {
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
-  color: #000;
-  font-family: 'Montserrat', sans-serif;
+  color: @text;
+  font-family: 'Montserrat';
+  font-weight: 400;
   font-size: 16px;
+  line-height: 1.2;
   line-height: normal;
+  background-color: #F4FBFF;
 
+}
+
+.noscroll {
+  overflow: hidden;
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  opacity: .9 !important;
+  background-color: #282D6F;
+  display: none;
+
+  &.active {
+    display: block;
+  }
+  
 }
 
 a,
@@ -81,8 +107,6 @@ input, input:focus, button, button:focus, input::placeholder {
 
 .container-large {
   width: 100%;
-
-  background-color: blue;
   @media (min-width: 768px) {
     padding-left: 25px;
     padding-right: 25px;
@@ -94,9 +118,9 @@ input, input:focus, button, button:focus, input::placeholder {
   font-size: 80px;
   line-height: 1.12;
   color: #ffffff;
-  font-family: @m900;
+  font-weight: 900;
 
-  @media (max-width: 991px) {
+  @media (max-width: 1364px) {
     font-size: 70px;
     line-height: 1.29;
   }
@@ -107,31 +131,62 @@ input, input:focus, button, button:focus, input::placeholder {
   }
 }
 
-.title-2 h2 {
+.section-head h2,
+.section-title h2 {
   font-size: 40px;
   line-height: 1.22;
   color: @purple;
-  font-family: @m900;
+  font-weight: 900;
+}
 
+.section-title {
+  margin-bottom: 40px;
+}
+
+.title-3 h3,
+.section-title h2 {
+  color: @purple;
+  font-weight: 900;
+  font-size: 34px;
   @media (max-width: 991px) {
-    font-size: 40px;
+    font-size: 34px;
   }
-
   @media (max-width: 767px) {
-    font-size: 36px;
+    font-size: 24px;
   }
 }
 
-.title-3 h3 {
+.block-title {
+  margin-bottom: 20px;
+}
+
+.block-title h3 {
+  font-size: 30px;
+  line-height: 1.23;
+  font-weight: 700;
+  @media (max-width: 767px) {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+}
+
+.article-title h3,
+.section-title h2,
+.title-4 h4 {
   font-size: 34px;
-  line-height: 1.2;
+  line-height: 1.23;
   color: @purple;
-  font-family: @m900;
+  font-weight: 900;
 
   @media (max-width: 767px) {
     font-size: 24px;
-    line-height: 1.17;
   }
+}
+
+.head-4 h4 {
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 700;
 }
 
 //text
@@ -141,9 +196,80 @@ p {
   color: #000000;
 }
 
+.text-30 p {
+  font-size: 30px;
+  line-height: 1.2;
+}
+
+.article-title h4,
+.text-24 p {
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: @purple;
+
+  @media (max-width: 767px) {
+    font-size: 20px;
+  }
+}
+
+.text-20 p {
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 700;
+}
 
 
 //link
+.text-link {
+  color: @blue;
+  border-bottom: 1px solid @blueOp;
+}
 
+//color text
+.text-bold p, p.text-bold {
+  font-weight: 700;
+}
 
-//button
+.text-20.red-text p,
+.red-text, .red-text p {
+  color: @red;
+}
+
+.green-text,
+.green-text p {
+  color: @green;
+}
+
+.bg-blue {
+  border-radius: 15px;
+  background-color: @darkblue;
+  padding: 30px;
+}
+
+//label
+.card-label {
+  border-radius: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 28px;
+  line-height: 29px;
+  font-weight: 700;
+  color: #fff;
+  display: inline-block;
+  position: absolute;
+
+  background-color: @green;
+}
+
+.card-label.card-label--orange {
+  background-color: @orange;
+}
+
+.br-mobile {
+  display: block;
+
+  @media (max-width: 1199px) {
+    display: none;
+  }
+}

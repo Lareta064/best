@@ -1,0 +1,53 @@
+form.contact-form(action="#")
+	.form-body
+		.form-item
+			.form-item__label
+				label Loan Purpose
+				.page-tooltip
+					span ?
+					.page-tooltip__box
+						p Lenders often determine loan approval based on combo of loan purpose & amount
+			.form-select
+				.form-select__icon
+					+selectArr
+				input(type="text" name="" placeholder="Home Improvements" autocomplete="off" readonly)
+				ul.form-select__options
+					li Debt consolidation loan
+					li.active Home Improvement
+					li Student Loan
+					li Medical Expenses
+					li Large Purcases
+					li Special Occasion Credit Card
+					li Consolidation
+					li Loan Other
+					       
+		.form-item
+			.form-item__label
+				label Loan Amount
+				.page-tooltip
+					span ?
+					.page-tooltip__box
+						p Lenders often determine loan approval based on combo of loan purpose & amount
+			.form-range
+				.form-range-value.d-flex
+					span $
+					span#amount-val
+				.range-input-inner
+					input(type="range" min="0" max="30000" value="10000" oninput="document.getElementById('amount-val').innerHTML =this.value;" id="range-1")
+					.range-line#range-line1
+		.form-item
+			.form-item__label
+				label Loan Amount
+				.page-tooltip
+					span ?
+					.page-tooltip__box
+						p Lenders often determine loan approval based on combo of loan purpose & amount
+			.form-range
+				.form-range-value.d-flex
+					span $
+					span#income-val
+				.range-input-inner
+					input(type="range" min="0" max="200000" value="50000" oninput="document.getElementById('income-val').innerHTML =this.value;" id="range-2" )
+					.range-line#range-line2 
+	.form-footer
+		button(type="submit").page-button.w-100 Find my best loan

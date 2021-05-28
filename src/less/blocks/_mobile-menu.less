@@ -1,0 +1,148 @@
+.mobile-menu{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: #0652DD;
+	box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.35);
+	z-index: 99;
+	min-height: 800px;
+	@media(max-width:767px){
+		height: 100vh;
+		overflow-y: auto;
+	}
+	padding-top: 33px;
+	transform: translateX(-120%);
+	&.active{
+		transform: translateX(0%);
+	}
+	.tr;
+	.logo{
+		color: #fff;
+	}
+	.close-btn{
+		cursor: pointer;
+		position: fixed;
+		top: 20px;
+		right: 20px;
+		z-index: 3;
+		svg{
+			.tr;
+		}
+		path{
+			fill: #fff;
+			opacity:  .5;
+		}
+	}
+	.close-btn:hover{
+		svg{
+			transform: rotate(360deg)
+		}
+	}
+	.mobile-menu__right{
+		@media(max-width:767px){
+			margin-top: 50px;
+		}
+	}
+}
+
+.mobile-menu__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-left: 70px;
+  padding-right: 70px;
+  @media (max-width: 767px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.mobile-menu__body{
+	
+	overflow: auto;
+	padding-bottom: 125px;
+	padding-left: 70px;
+	padding-right: 70px;
+	padding-top: 70px;
+	@media(max-width:767px){
+		
+		padding-left: 20px;
+		padding-right: 20px;
+		margin-bottom: 70px;
+		
+		padding-top: 20px;
+	}
+}
+
+.mobile-menu__nav {
+  @media (max-width: 767px) {
+    margin-bottom: 44px;
+  }
+
+  li {
+    font-size: 34px;
+    line-height: 41px;
+    font-weight: 900;
+    color: #fff;
+    @media (max-width: 767px) {
+      font-size: 24px;
+    }
+
+    a {
+      border-bottom: 1px solid rgba(255, 255, 255, .2);
+      color: #fff;
+      padding-bottom: 3px;
+    }
+
+    &:nth-child(2n) a {
+      border-bottom-style: dashed;
+    }
+
+    & + li {
+      margin-top: 20px;
+    }
+  }
+}
+
+.mobile-menu__left {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.mobile-menu__btn {
+  .header-button {
+    border-color: #fff;
+    color: #fff;
+    margin-bottom: 16px;
+  }
+
+  p {
+    color: #fff;
+  }
+}
+
+.mobile-menu .page-tooltip .page-tooltip__box {
+  min-width: 280px;
+}
+
+.mobile-menu .header-button.button-light {
+  display: block;
+  margin-left: 0;
+}
+
+.mobile-menu .loan-card {
+  margin-bottom: 20px;
+  max-width: 335px;
+  width: 100%;
+
+}
+
+@media (min-width: 1200px) {
+  .mobile-menu {
+    display: none;
+  }
+}

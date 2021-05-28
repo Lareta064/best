@@ -1,0 +1,125 @@
+.collaboration {
+  .contact-cards {
+    margin-top: 60px;
+    margin-bottom: 70px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    padding-bottom: 70px;
+
+    @media (max-width: 991px) {
+      padding-bottom: 40px;
+    }
+
+    @media (max-width: 767px) {
+      .row .col-md-6:nth-last-child(2) {
+        .contact-card {
+          margin-bottom: 40px;
+        }
+      }
+    }
+  }
+
+
+  .contact-card {
+    display: block;
+    max-width: 335px;
+    .ma;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    background: #FFFFFF;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 40px;
+
+
+    @media (min-width: 1200px) and (max-width: 1364px) {
+      min-height: 387px;
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+
+    @media (max-width: 1199px) {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+
+    @media (max-width: 991px) {
+      margin-bottom: 30px;
+    }
+
+    .page-button.w-200,
+    .button-light.w-200 {
+      width: 200px;
+
+      @media (min-width: 1200px) and (max-width: 1364px) {
+        width: 150px;
+      }
+
+    }
+
+    .article-title {
+      @media (max-width: 767px) {
+        margin-bottom: 10px;
+      }
+    }
+
+  }
+
+
+  .card-icon {
+    height: 100px;
+  }
+
+  .card-text .article-title h4 {
+    font-size: 24px;
+    margin-top: 30px;
+
+    @media (min-width: 1200px) and (max-width: 1364px) {
+      font-size: 20px;
+    }
+
+    @media (max-width: 991px) {
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+
+  }
+
+  .card-text p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    @media (min-width: 1200px) and (max-width: 1364px) {
+      min-height: 72px;
+    }
+
+    @media (max-width: 991px) {
+      margin-bottom: 27px;
+    }
+  }
+
+  .text-block.text-block--flex {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+
+
+    .text-20 p {
+      color: @purple;
+      padding-bottom: 40px;
+
+
+      @media (min-width: 992px) and (max-width: 1200px) {
+        margin-top: 30px;
+      }
+
+      @media (min-width: 767px) and (max-width: 991px) {
+        padding-bottom: 62px;
+      }
+
+      @media (min-width: 376px) and (max-width: 426px) {
+        padding-left: 20px;
+      }
+    }
+  }
+}

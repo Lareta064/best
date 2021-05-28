@@ -1,0 +1,149 @@
+.subscribe-block {
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+  min-width: 335px;
+  @media (max-width: 767px) {
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+
+  .block-title {
+    h3 {
+      color: #fff;
+    }
+  }
+}
+
+.subscribe-form .form-item input {
+  width: 100%;
+  background: #FFFFFF;
+  border: 1px solid #2980B9;
+  box-sizing: border-box;
+  border-radius: 4px;
+  height: 50px;
+  padding-left: 20px;
+  color: #B2B2B2;
+  font-weight: 700;
+
+  &::placeholder {
+    color: #B2B2B2;
+    font-weight: 700;
+  }
+
+}
+
+.subscribe-form {
+  display: flex;
+  @media (max-width: 767px) {
+    display: block;
+  }
+  justify-content: space-between;
+
+  .form-item {
+    width: 90%;
+    @media (max-width: 991px) {
+      width: 90%;
+
+    }
+    @media (max-width: 767px) {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+
+  .form-btn {
+    min-width: 340px;
+    max-width: 340px;
+    margin-left: 30px;
+
+    @media (max-width: 1199px) {
+      min-width: 200px;
+      max-width: 200px;
+    }
+
+    @media (max-width: 767px) {
+      min-width: 100%;
+      max-width: 100%;
+      margin-left: 0;
+    }
+
+  }
+}
+
+.form-item {
+  .error-text p {
+    font-size: 14px;
+    line-height: 20px;
+    color: #fff;
+    padding-top: 10px;
+    position: relative;
+    padding-left: 20px;
+
+    &:after {
+      content: '';
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      position: absolute;
+      background-color: @red;
+      left: 0;
+      top: 13px;
+
+    }
+  }
+}
+
+.recived-block__text {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.recived-block__col {
+  width: 70%;
+  @media (max-width: 1364px) {
+    width: 63%;
+    margin-bottom: 30px;
+  }
+  @media (max-width: 992px) {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+.recived-block__btn {
+  width: 340px;
+  @media (min-width: 1200px) and (max-width: 1364px) {
+    width: 300px;
+  }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    width: 277px;
+  }
+
+}
+
+.recived-block.bg-blue {
+  background-color: @purple;
+  color: #fff;
+
+  p {
+    color: #fff;
+    font-size: 20px;
+    line-height: 1.4;
+    @media (max-width: 767px) {
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+  }
+}
+
+.recived-block__btn .button-light {
+  .tr;
+  color: #fff;
+  border-color: rgba(255, 255, 255, .5);
+
+  &:hover {
+    border-color: rgb(255, 255, 255);
+  }
+}

@@ -1,0 +1,100 @@
+.fakeScroll { 
+	position: relative; 
+	margin: 0px auto 20px; 
+	height: auto;  
+	width: 100%; 
+	overflow: auto; 
+	
+	/* background: white;  */
+}
+@media(max-height:767px){
+	.fakeScroll{
+		height: 400px; 
+	}
+}
+.fakeScroll__scope { 
+	overflow:visible !important; 
+}
+.fakeScroll__wrap {
+    overflow: hidden;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+}
+.fakeScroll__content {
+    height: 100%;
+    width: 100%;
+    padding: 0 18px 0 0;
+    position: relative;
+    right: -18px;
+    overflow: auto;
+    box-sizing: border-box;
+}
+.fakeScroll__track {
+    position: absolute;
+    right: -15px;
+    top: 0;
+    bottom: 0;
+    width: 9px;
+    cursor: default;
+}
+.fakeScroll__bar {
+    position: relative;
+    background: rgba(51, 122, 183, .6);
+    width: 100%;
+    border-radius: 4px;
+    right: 0;
+    top: 0;
+    z-index: 0;
+    transition: background 0.1s;
+    cursor: pointer;
+}
+.fakeScroll__bar:hover {
+    background: #337AB7;
+}
+.fakeScroll__bar.fakeScroll--grabbed {
+    background: #337AB7;
+}
+body.fakeScroll--grabbed {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}	
+.fakeScroll__wrap::before{ 
+	/* content:'';  */
+	position:absolute; 
+	z-index:1; 
+	top:0; 
+	left:0; 
+	right:0; 
+	height:5%;
+	background: linear-gradient(#FFF 0%, rgba(255,255,255,0) 100%);
+}
+.fakeScroll__wrap::after{ 
+	/* content:'';  */
+	position:absolute; 
+	z-index:1; 
+	bottom:0; 
+	left:0; 
+	right:0; 
+	height:5%;
+	background: linear-gradient(rgba(255,255,255,0) 0%, #FFF 100%);
+}
+.scroll-inside .fakeScroll__content {
+    padding: 0 33px 0 0;
+}
+.scroll-inside .fakeScroll__track {
+	background: #BFE2FF;
+	right: 0;
+	top: 10%;
+	bottom: 10%;
+	z-index: 1;
+	padding: 10px 3px;
+	border-radius: 20px 0 0 20px;
+	transition: .1s;
+	width: 14px;
+}
+.scroll-inside .fakeScroll__bar{ 
+	background: #337AB7; 
+	border-radius: 20px 0 0 20px; 
+}

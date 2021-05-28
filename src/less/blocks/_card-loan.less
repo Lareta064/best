@@ -1,0 +1,246 @@
+.loan-card__inner{
+  display: block;padding-bottom: 50px;
+  height: 100%;
+}
+.loan-card {
+  
+  width: 400px;
+  height: 530px;
+  .ma;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+  
+  @media (max-width: 1364px) {
+    width: 300px;
+  }
+  @media (max-width: 767px) {
+    margin-bottom: 30px;
+    width: 335px;
+
+  }
+
+  .card-label {
+    top: 20px;
+    left: 20px;
+  }
+}
+.loan-card .page-button{
+  position: absolute;
+  left: 25px;
+  bottom: 50px;
+  z-index: 10;
+}
+.loan-card__head {
+  //box-shadow: 0 4px 4px rgba(0, 0, 0, .25);
+  background-position: center;
+  height: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+.loan-card__title {
+  .flex;
+  justify-content: space-between;
+  .page-tooltip span{
+    background-color:  #F1F1F1;
+  }
+  .head-4 {
+    color: @blue;
+    border-bottom: 1px solid rgba(77, 124, 254, .2);
+  }
+
+  margin-bottom: 22px;
+}
+
+.loan-card__body {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 20px;
+  margin-bottom: 30px;
+}
+
+.loan-card__footer {
+  padding-left: 30px;
+  padding-right: 30px;
+  display: flex;
+
+  align-items: center;
+
+  .button-link {
+    font-weight: 700;
+    color: @blue;
+    border-bottom: 1px solid @blueOp;
+    padding-bottom: 4px;
+    margin-left: auto;
+    position: absolute;
+    bottom: 59px;
+    right: 65px;
+    @media(max-width:1364px){
+      right: 35px;
+    }
+
+    &:hover{
+      color: @red;
+      border-bottom-color: rgba(229, 69, 69, .15);
+    }
+  }
+}
+
+.loan-card__terms {
+  display: flex;
+  margin-bottom: 20px;
+
+  .terms-item {
+
+    p:first-child {
+      font-weight: 900;
+      font-size: 30px;
+      line-height: 1.2;
+      color: @purple;
+    }
+
+    p:last-child {
+      color: #000;
+
+    }
+
+    span {
+      font-size: 16px;
+      font-weight: 900;
+    }
+  }
+
+  .terms-item + .terms-item {
+    margin-left: 50px;
+
+    p:first-child {
+      font-weight: 700;
+
+    }
+  }
+}
+
+.terms-item.green-text p:first-child {
+  color: @green;
+}
+
+.rating-star {
+  display: flex;
+  align-items: center;
+
+  span {
+    line-height: 1;
+  }
+
+  span + span {
+    margin-left: 5px;
+  }
+}
+
+.rating-star span path {
+  fill: #FCA674;
+}
+
+.rating-star span.passive-star path {
+  fill: #dcdcdc;
+}
+
+.rating-info {
+  margin-top: 5px;
+}
+
+.loan-cards {
+  margin-bottom: 100px;
+  @media(max-width:767px){
+    margin-bottom: 72px;
+  }
+  
+}
+.loan-card__head{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loan-card__head img{
+  width: 70%;
+}
+.loan-card--cred .loan-card__head {
+  background-color: #2156A4;
+
+}
+
+.loan-card--lfree .loan-card__head {
+  background-color: #0F1F2F;
+}
+
+.loan-card--lclub .loan-card__head {
+  background-color: #0e3c60;
+}
+.loan-card--amon{
+  background-color: #fff;
+  .loan-card__head{
+    border: 12px solid @purple;
+  }
+}
+.loan-card--funds .loan-card__head{
+  background-color: #050A0D;
+}
+.loan-card--upgrade .loan-card__head{
+  background-color: #00a669;
+  img{
+    width: 32%;
+  }
+}
+.loan-card.loan-card--cred {
+  .button-light {
+    display: none;
+  }
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    margin-bottom: 45px;
+    width: 100%;
+    height: 458px;
+    max-width: 630px;
+    margin-left: auto;
+    margin-right: auto;
+    .loan-card__head img{
+      width: 42%;
+    }
+    .flex-inner {
+      display: flex;
+    }
+
+    .loan-card__terms {
+      margin-bottom: 0;
+    }
+
+    .loan-card__terms .terms-item + .terms-item,
+    .loan-card__rating {
+      margin-left: 56px;
+    }
+
+    .page-button, .button-light {
+      width: 270px;
+      display: inline-block;
+      text-align: center;
+    }
+
+    .button-light {
+      position: absolute;
+    right: 35px;
+    bottom: 50px;
+    }
+
+    .button-link {
+      display: none;
+    }
+  }
+}
+.loan-card__inner:hover .head-4{
+  color: @red;
+  border-color: rgba(229, 69, 69, .2);
+}

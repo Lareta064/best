@@ -1,0 +1,201 @@
+mixin header(arg)
+	header.header
+		.container
+			.header-content
+				a(href="index.html").logo bestofpersonalloans.com
+				.header-menu
+					ul
+						each item in arg
+							if item.addClass
+								li.active
+									a(href="" +item.link) #{item.title}
+							else
+								li
+									a(href="" +item.link) #{item.title}						
+				a(href="#!").header-button.button-light.w-200  The Very Best of ...
+				.menu-toggle
+					span
+
+
+mixin floatHeader
+	header.header.header-floating
+		.container
+			.header-content
+				.header-left
+					a(href="index.html").logo bestofpersonalloans.com
+					a(href="#!").text-link.d-none.d-lg-block Credible Review
+				.header-right
+					a(href="#!").page-button#float-btn  Get your rate now
+					a(href="index.html").button-light Close
+					a(href="index.html").page-close.d-flex.d-md-none
+						+close
+
+mixin offerCards
+	.offer-cards
+		.row
+			//===== offer-card-1 =====
+			.col-md-6.col-lg-4
+				.loan-card.loan-card--amon
+					a(href="review.html").loan-card__inner
+						.loan-card__head
+							img(src="img/logo/4.png", alt="logo")
+						.loan-card__body
+							.loan-card__title
+								.head-4
+									h4 Credible
+								.page-tooltip
+									span ?
+									.page-tooltip__box
+										p Lenders often determine loan approval based on combo of loan purpose & amount
+							.flex-inner
+								.loan-card__terms
+									.terms-item
+										p 4%
+										p Min APP
+									.terms-item
+										p 15 
+											span years
+										p MAX loan term
+								.loan-card__rating
+									.rating-star
+										+star
+										+star
+										+star
+										+star
+										+star
+									.rating-info
+										p 2,619 reviews on Starpilot
+						.loan-card__footer
+							.button-link Review
+					a(href="#!").page-button.w-200 Get your rate
+			//===== offer-card-2 =====
+			.col-md-6.col-lg-4
+				.loan-card.loan-card--funds
+					a(href="review.html").loan-card__inner
+						.loan-card__head
+							img(src="img/logo/5.png", alt="logo")
+							
+						.loan-card__body
+							.loan-card__title
+								.head-4
+									h4 LendingTree
+								.page-tooltip
+									span ?
+									.page-tooltip__box
+										p Lenders often determine loan approval based on combo of loan purpose & amount
+							.loan-card__terms
+								.terms-item
+									p 6%
+									p Min APP
+								.terms-item.green-text
+									p 20 
+										span years
+									p MAX loan term
+							.loan-card__rating
+								.rating-star
+									+star
+									+star
+									+star
+									+star
+									+star(class="passive-star")
+								.rating-info
+									p 1,871 reviews on Starpilot
+						.loan-card__footer
+							a(href="#!").button-link Review
+					a(href="#").page-button.w-200 Get your rate
+			//===== offer-card-3 =====
+			.col-md-6.col-lg-4
+				.loan-card.loan-card--upgrade
+					a(href="review.html").loan-card__inner
+						.loan-card__head
+							img(src="img/logo/6.png", alt="logo")
+						.loan-card__body
+							.loan-card__title
+								.head-4
+									h4 LendingClub
+								.page-tooltip
+									span ?
+									.page-tooltip__box
+										p Lenders often determine loan approval based on combo of loan purpose & amount
+							.loan-card__terms
+								.terms-item
+									p 6%
+									p Min APP
+								.terms-item
+									p 12 
+										span years
+									p MAX loan term
+							.loan-card__rating
+								.rating-star
+									+star
+									+star
+									+star
+									+star
+									+star
+								.rating-info
+									p 1,871 reviews on Starpilot
+						.loan-card__footer
+							a(href="#!").button-link Review
+					a(href="#!").page-button.w-200 Get your rate
+			//===== offer-card-4 =====
+			.col-md-6.col-lg-4.show-tablet.hide-card
+				.loan-card.loan-card--lclub
+					a(href="review.html").loan-card__inner
+						.loan-card__head
+							img(src="img/logo/3.png", alt="logo")
+						.loan-card__body
+							.loan-card__title
+								.head-4
+									h4 LendingClub
+								.help-block ?
+							.loan-card__terms
+								.terms-item
+									p 6%
+									p Min APP
+								.terms-item
+									p 12 
+										span years
+									p MAX loan term
+							.loan-card__rating
+								.rating-star
+									+star
+									+star
+									+star
+									+star
+									+star
+								.rating-info
+									p 1,871 reviews on Starpilot
+						.loan-card__footer
+							a(href="review.html").button-link Review
+					a(href="#!").page-button.w-200 Get your rate
+			//===== offer-card-5 =====
+			.col-md-6.col-lg-4.hide-card
+				.loan-card.loan-card--lfree
+					a(href="review.html").loan-card__inner
+						.loan-card__head
+							img(src="img/logo/2.png", alt="logo")
+						.loan-card__body
+							.loan-card__title
+								.head-4
+									h4 LendingClub
+								.help-block ?
+							.loan-card__terms
+								.terms-item
+									p 6%
+									p Min APP
+								.terms-item
+									p 12 
+										span years
+									p MAX loan term
+							.loan-card__rating
+								.rating-star
+									+star
+									+star
+									+star
+									+star
+									+star
+								.rating-info
+									p 1,871 reviews on Starpilot
+						.loan-card__footer
+							a(href="review.html").button-link Review
+					a(href="#!").page-button.w-200 Get your rate

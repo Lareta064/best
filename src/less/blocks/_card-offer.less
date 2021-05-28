@@ -1,0 +1,38 @@
+.loan-offers {
+  margin-bottom: 100px;
+
+  .hide-card {
+    display: none;
+  }
+
+  .hide-card.active {
+    display: block;
+  }
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    .hide-card.show-tablet {
+      display: block;
+    }
+  }
+}
+
+.offer-cards {
+  margin-bottom: 18px;
+
+
+  .loan-card {
+    margin-bottom: 40px;
+
+    @media (max-width: 991px) {
+      margin-bottom: 24px;
+    }
+
+    @media (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+#show-cards.hide {
+  display: none;
+}

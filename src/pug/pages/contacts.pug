@@ -1,0 +1,17 @@
+extends ../layouts/layout.pug
+
+block content
+	#overlay
+	include ../sections/_mobile-menu.pug
+	+header([{link: "index.html", title: "Top 10"}, {link: "review.html", title: "Reviews"}, {link: "methodology.html", title: "Peer to Peer"}, {link: "#", title: "Comparison"}, {link: "#", title: "Learn"}])
+	include ../sections/contacts/_header-banner
+	include ../sections/_contact-card.pug
+	include ../sections/contacts/_loan-cards.pug
+	include ../sections/contacts/_subscribe-form.pug
+	include ../sections/contacts/_faq.pug
+	include ../sections/contacts/_card-articles.pug
+	include ../sections/_footer.pug
+	include ../sections/_modal.pug
+    
+block variables
+	-var title = "Contacts";

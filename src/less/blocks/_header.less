@@ -1,0 +1,235 @@
+.header-content {
+  display: flex;
+  align-items: center;
+  height: 90px;
+  margin-bottom: 20px;
+
+  @media (max-width: 767px) {
+    height: 50px;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1364px) {
+  .header .container {
+    max-width: 1170px;
+  }
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 700;
+  color: @purple;
+  margin-right: 120px;
+
+  @media (max-width: 1364px) {
+    margin-right: 70px;
+    font-size: 18px;
+  }
+
+  @media (max-width: 1199px) {
+    margin-right: 0;
+    font-size: 20px;
+  }
+}
+
+.header-button.button-light {
+  width: 200px;
+  padding-left: 23px;
+  padding-right: 23px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-left: auto;
+  height: 40px;
+  line-height: 38px;
+
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+.header-menu {
+  @media (max-width: 1199px) {
+    display: none;
+  }
+
+  ul {
+    display: flex;
+  }
+
+  li {
+    padding-top: 10px;
+    padding-bottom: 6px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 4px;
+
+    & + li {
+      margin-left: 20px;
+
+      @media (max-width: 1364px) {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  li a {
+
+    display: block;
+    white-space: nowrap;
+    font-size: 16px;
+    font-weight: 700;
+    position: relative;
+    border-bottom: 1px dashed @blueOp;
+    padding-bottom: 4px;
+    color: @blue;
+  }
+
+  li:nth-child(2n) a {
+    border-bottom: 1px solid @blueOp;
+  }
+
+  li:hover a {
+
+    color: @red;
+    border-bottom-color: rgba(229, 69, 69, .15);
+
+  }
+
+  li.active {
+    background-color: @purple;
+    color: #fff;
+
+    a {
+      color: #fff;
+      border-bottom-color: transparent;
+    }
+  }
+}
+
+.header-floating .header-content {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-floating {
+  position: fixed;
+  top: 0;
+  height: 90px;
+  left: 0;
+  right: 0;
+  z-index: 20;
+
+  &.fix {
+    background: #F4FBFF;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  @media (max-width: 767px) {
+    height: 50px;
+  }
+
+  .header-left {
+    display: flex;
+    align-items: center;
+
+    .logo {
+      margin-right: 60px;
+    }
+
+    .text-link {
+      border-bottom: 0px;
+      color: rgba(0, 0, 0, .3);
+      font-weight: 700;
+      .tr;
+
+      &:hover {
+        color: @red;
+      }
+    }
+  }
+
+  .header-right {
+    display: flex;
+    align-items: center;
+
+    .button-light {
+      margin-left: 30px;
+      padding-left: 30px;
+      padding-right: 30px;
+      display: inline-block;
+      @media (max-width: 1199px) {
+        height: 40px;
+        line-height: 38px;
+      }
+      @media (max-width: 767px) {
+        display: none;
+        .page-close {
+          width: 50px;
+          height: 50px;
+          padding: 20px;
+          background-color: @purple;
+          display: flex;
+        }
+      }
+    }
+
+    @media (max-width: 767px) {
+
+      .page-close {
+        min-width: 50px;
+        min-height: 50px;
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        background-color: @purple;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        svg {
+          width: 25px;
+          height: 25px;
+          .tr;
+
+          path {
+            fill: #fff;
+            opacity: 1;
+          }
+        }
+
+        &:hover {
+          svg {
+            transform: rotate(180deg);
+          }
+        }
+      }
+    }
+
+    .page-button {
+      padding-left: 35px;
+      padding-right: 35px;
+      display: none;
+      white-space: nowrap;
+
+      &.active {
+        display: inline-block;
+      }
+
+      @media (max-width: 1199px) {
+        padding-right: 15px;
+        padding-left: 15px;
+        text-align: center;
+        height: 40px;
+        line-height: 40px;
+      }
+      @media (max-width: 767px) {
+        &.active {
+          display: none;
+        }
+      }
+    }
+  }
+}

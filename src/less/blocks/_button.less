@@ -1,0 +1,70 @@
+.page-button, .button-light {
+  border-radius: 4px;
+  display: inline-block;
+  font-weight: 700;
+  padding-left: 45px;
+  padding-right: 45px;
+  line-height: 48px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.page-button {
+  background: @btn;
+  box-shadow: 0px 5px 10px rgba(64, 204, 145, 0.35);
+  .tr;
+  color: #fff;
+
+  border: 1px solid transparent;
+
+}
+
+.button-light:hover {
+  color: @red;
+  border-color: @red;
+}
+
+.button-light.w-100,
+.page-button.w-100 {
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+}
+
+input.page-button {
+  width: 100%;
+  text-align: center;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+a.page-button:hover {
+  color: #fff;
+
+}
+
+.page-button:hover {
+  box-shadow: 0px 5px 10px rgba(64, 204, 145, 0.35);
+  background-color: #38B27F;
+}
+
+.button-light {
+  border: 1px solid #4D7CFE;
+  border-radius: 4px;
+  background-color: transparent;
+  color: #4D7CFE;
+}
+
+.button-light.w-200,
+.page-button.w-200 {
+  padding-left: 0;
+  padding-right: 0;
+  width: 200px;
+  text-align: center;
+  @media (min-width: 768px) and (max-width: 1364px) {
+    width: 150px;
+  }
+  @media (max-width: 767px) {
+    width: 170px;
+  }
+}

@@ -1,0 +1,137 @@
+.loan-articles {
+  margin-bottom: 120px;
+
+  .section-title {
+    margin-bottom: 40px;
+    @media (max-width: 767px) {
+      margin-bottom: 25px;
+    }
+  }
+}
+
+.articles-cards {
+  display: block;
+  justify-content: space-between;
+
+
+  .head-4 h4 {
+    @media (min-width: 992px) and (max-width: 1364px) {
+      font-size: 18px;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+  }
+}
+
+.article-card {
+  display: block;
+  max-width: 400px;
+  .ma;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #FFFFFF;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  padding-bottom: 55px;
+
+  &:hover {
+    .head-4 h4 span {
+      color: @red;
+      background: linear-gradient(to right, rgba(229, 69, 69, .2), rgba(229, 69, 69, .2));
+      background-position: 0 100%;
+      background-repeat: repeat-x;
+      background-size: 5px 1px;
+    }
+  }
+
+  @media (max-width: 1199px) {
+    max-width: 300px;
+  }
+
+
+  @media (max-width: 767px) {
+    margin-bottom: 30px;
+    max-width: 335px;
+  }
+}
+
+.article-card__head {
+  height: 200px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  //box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.article-card__body {
+  padding-top: 30px;
+  padding-right: 40px;
+  padding-left: 30px;
+
+  @media (min-width: 768px) and (max-width: 1199px) {
+    padding-right: 30px;
+  }
+}
+
+.article-card__title {
+  padding-bottom: 20px;
+
+  .head-4 h4 span {
+    width: 205px;
+    background: linear-gradient(to right, rgba(77, 124, 254, .2), rgba(77, 124, 254, .2));
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 5px 1px;
+  }
+}
+
+.article-card__terms {
+
+  p {
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
+    @media (max-width: 767px) {
+      -webkit-line-clamp: 6;
+    }
+  }
+}
+
+.article-card-1 {
+  .article-card__terms p {
+    @media (min-width: 768px) and (max-width: 991px) {
+      -webkit-line-clamp: 3;
+    }
+  }
+}
+
+.article-card-2, .article-card-3 {
+  .article-card__terms p {
+    @media (min-width: 768px) and (max-width: 991px) {
+      -webkit-line-clamp: 7;
+    }
+  }
+}
+
+
+.article-card.article-card-1 {
+  @media (max-width: 1199px) {
+    margin-bottom: 45px;
+  }
+
+  @media (max-width: 991px) {
+    width: 100%;
+    max-width: 630px;
+  }
+
+  @media (max-width: 767px) {
+    width: 100%;
+    max-width: 335px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
