@@ -30,6 +30,85 @@ mixin floatHeader
 					a(href="index.html").page-close.d-flex.d-md-none
 						+close
 
+mixin loan-card(label, imgSrc, title, per1, per2)
+	.loan-card
+		a(href="review.html").loan-card__inner
+			.card-label !{label}
+			.loan-card__head
+				img(src="img/cards/"+ imgSrc +".jpg", width="335"  alt="logo")
+			.loan-card__body
+				.loan-card__title
+					.head-4
+						h4 !{title}
+					.page-tooltip
+						span ?
+						.page-tooltip__box
+							p Lenders often determine loan approval based on combo of loan purpose & amount
+				.flex-inner
+					.loan-card__terms
+						.terms-item.green-text
+							p !{per1}%
+							p Min APP
+						.terms-item
+							p !{per2} 
+								span years
+							p MAX loan term
+					.loan-card__rating
+						.rating-star
+							+star
+							+star
+							+star
+							+star
+							+star
+						.rating-info
+							p 2,619 reviews on Starpilot
+			.loan-card__footer
+				.button-link Review
+		a(href="#!" data-toggle="modal" data-target="#modalForm").page-button.w-200 Get your rate
+mixin mort-card(label, imgSrc, title, per1, per2)
+	.loan-card.loan-card--cred
+		a(href="review.html").loan-card__inner
+			.card-label !{label}
+			.loan-card__head
+				img(src="img/cards/"+ imgSrc +".jpg", alt="logo")
+			.loan-card__body
+				.loan-card__title
+					.head-4
+						h4 !{title}
+					.page-tooltip
+						span ?
+						.page-tooltip__box
+							p Lenders often determine loan approval based on combo of loan purpose & amount
+				.flex-inner
+					.loan-card__terms
+						.terms-item.green-text
+							p !{per1}%
+							p Min Down Payment
+						.terms-item
+							p !{per2} 
+								span years
+							p Repayment terms
+					.loan-card__rating
+						.rating-star
+							+star
+							+star
+							+star
+							+star
+							+star
+						.rating-info
+							p 2,619 reviews on Starpilot
+			.loan-card__footer
+				.button-link Review
+		a(href="#!" data-toggle="modal" data-target="#modalForm").page-button.w-200 Get your rate
+mixin card-fvi
+	.card-fvi
+		.card-fvi__img
+			img(src="img/cards/fvi.jpg", width="300" alt="img")
+		.card-fvi__body
+			.card-fvi__label
+				p FVI
+			.card-fvi__text
+				p The Annual Percentage Rate (APR) is the cost you pay each year to borrow money, including fees, expressed as a percentage
 mixin offerCards
 	.offer-cards
 		.row
