@@ -1,24 +1,4 @@
 //========== section ===========
-section.loan-offers.pt-100.pb-140
-	.container
-		.section-title
-			h2 Top-3 best personal loans&nbsp;for&nbsp;you
-		.loan-cards
-			.row
-				//==========cred card===========
-				.col-md-6.col-xl-3
-					+loan-card('Best APR', '1', 'Credible', '4', '15')
-				.col-md-6.col-xl-3
-					+loan-card('Best loan term', '2', 'LendingTree', '6', '20')
-				.col-md-6.col-xl-3
-					+loan-card('Best rating', '3', 'LendingClub', '6', '12')
-				.col-md-6.col-xl-3
-					+card-fvi
-			.card-block__button
-				.row
-					.col-xl-9
-						button#show-cards.button-light.w-100 Show more offers
-		include _form-subscribe
-
-
-include _card-offer
+.pt-100.pb-140
+	include _cards-block-1
+//- include _card-offer

@@ -1,0 +1,19 @@
+section.mortgage-offers
+	.container
+		.section-title
+			h2 Top-3 best mortgage loans
+		.loan-cards
+			.row
+				.col-md-6.col-xl-3
+					+mort-card('Best APR', '4', 'Quicken Loans', '4', '15')
+				.col-md-6.col-xl-3
+					+mort-card('Best loan term', '5', 'Veterans United Home Loans', '6', '20')
+				.col-md-6.col-xl-3
+					+mort-card('Best rating', '6', 'Better.com', '6', '12')
+				.col-md-6.col-xl-3
+					+card-fvi
+			.card-block__button
+				.row
+					.col-xl-9
+						button#show-cards.button-light.w-100 Show more offers
+		include _form-subscribe
