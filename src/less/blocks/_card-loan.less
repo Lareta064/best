@@ -18,8 +18,10 @@
     margin-bottom: 30px;
   }
   @media (max-width: 767px) {
-    width: 335px;
+    width: 100%;
     max-width: 335px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .card-label {
@@ -224,20 +226,34 @@
   border-color: rgba(229, 69, 69, .2);
   background-image: linear-gradient(to right, rgba(229, 69, 69, .2), rgba(229, 69, 69, .2));
 }
+.card-fvi-wrapper{
+  width: 100%;
+  max-width:300px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  @media(max-width:767px){
+    max-width:335px;
+    display: flex;
+    justify-content: flex-start;
+    
+
+  }
+}
 .card-fvi{
   max-width:300px;
   min-height: 500px;
   width: 100%;
   padding-bottom: 30px;
-  margin-left: auto;
-  margin-right: auto;
+  // margin-left: auto;
+  // margin-right: auto;
   @media(max-width:375px){
     margin-left: 0;
   }
   
 }
 .card-fvi__img{
-  height: 250px;
+  // height: 250px;
   background-color: #FFE8DB;
 }
 .card-fvi__body{

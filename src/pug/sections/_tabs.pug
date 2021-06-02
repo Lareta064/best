@@ -1,18 +1,18 @@
-.pt-140.pb-90
+.pt-140
 	section.faq
-		.container
+		.container.container-mob
 			.faq-content
 				.section-title
 					h2 Frequently asked questions about things that matter
 				.row 
-					.col-xl-9 
-						
+					.col-xl-9
 						.tabs-wrapper#tabs
-							.tabs-menu
-								ul 
-									li.active(data-button='1') Personal loans
-									li(data-button='2') Mortgages
-									li(data-button='3') Credit cards
+							.tabs-menu-box
+								.tabs-menu
+									ul 
+										li.active(data-button='1') Personal loans
+										li(data-button='2') Mortgages
+										li(data-button='3') Credit cards
 							.tabs-content
 								.tabs-content__item.active(data-content="1")
 									include _faq-new.pug

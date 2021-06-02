@@ -132,6 +132,7 @@ input, input:focus, button, button:focus, input::placeholder {
   }
   @media (min-width: 1200px) {
     max-width: 1300px;
+    width: 95%;
    
   }
   @media (min-width: 1365px) {
@@ -144,7 +145,11 @@ input, input:focus, button, button:focus, input::placeholder {
 
   }
 }
-
+.container-mob{
+  @media(max-width:767px){
+    padding: 0;
+  }
+}
 // titles
 .title-1 h1 {
   font-size: 80px;
@@ -175,6 +180,10 @@ input, input:focus, button, button:focus, input::placeholder {
   color: @purple;
   font-weight: 900;
   max-width: 960px;
+  @media(max-width:767px){
+    font-size: 34px;
+    line-height: 40px;
+  }
 }
 .section-title {
   margin-bottom: 50px;
