@@ -1,49 +1,57 @@
-.mobile-menu{
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	background: #0652DD;
-	box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.35);
-	z-index: 99;
-	min-height: 800px;
-	@media(max-width:767px){
-		height: 100vh;
-		overflow-y: auto;
-	}
-	padding-top: 33px;
-	transform: translateX(-120%);
-	&.active{
-		transform: translateX(0%);
-	}
-	.tr;
-	.logo{
-		color: #fff;
-	}
-	.close-btn{
-		cursor: pointer;
-		position: fixed;
-		top: 20px;
-		right: 20px;
-		z-index: 3;
-		svg{
-			.tr;
-		}
-		path{
-			fill: #fff;
-			opacity:  .5;
-		}
-	}
-	.close-btn:hover{
-		svg{
-			transform: rotate(360deg)
-		}
-	}
-	.mobile-menu__right{
-		@media(max-width:767px){
-			margin-top: 50px;
-		}
-	}
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #0652DD;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.35);
+  z-index: 99;
+  min-height: 800px;
+  @media (max-width: 767px) {
+    height: 100vh;
+    overflow-y: auto;
+  }
+  padding-top: 57px;
+  transform: translateX(-120%);
+
+  &.active {
+    transform: translateX(0%);
+  }
+
+  .tr;
+
+  .logo {
+    color: #fff;
+  }
+
+  .close-btn {
+    cursor: pointer;
+    position: fixed;
+    top: 53px;
+    right: 69px;
+    z-index: 3;
+
+    svg {
+      .tr;
+    }
+
+    path {
+      fill: #fff;
+      opacity: .5;
+    }
+  }
+
+  .close-btn:hover {
+    svg {
+      transform: rotate(360deg)
+    }
+  }
+
+  .mobile-menu__right {
+    @media (max-width: 767px) {
+      margin-top: 50px;
+    }
+  }
 }
 
 .mobile-menu__header {
@@ -59,21 +67,21 @@
   }
 }
 
-.mobile-menu__body{
-	
-	overflow: auto;
-	padding-bottom: 125px;
-	padding-left: 70px;
-	padding-right: 70px;
-	padding-top: 70px;
-	@media(max-width:767px){
-		
-		padding-left: 20px;
-		padding-right: 20px;
-		margin-bottom: 70px;
-		
-		padding-top: 20px;
-	}
+.mobile-menu__body {
+
+  overflow: auto;
+  padding-bottom: 125px;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-top: 70px;
+  @media (max-width: 767px) {
+
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 70px;
+
+    padding-top: 20px;
+  }
 }
 
 .mobile-menu__nav {
@@ -86,8 +94,11 @@
     line-height: 41px;
     font-weight: 900;
     color: #fff;
+    @media (max-width: 991px) {
+      font-size: 40px;
+    }
     @media (max-width: 767px) {
-      font-size: 24px;
+      font-size: 34px;
     }
 
     a {
@@ -101,7 +112,7 @@
     }
 
     & + li {
-      margin-top: 20px;
+      margin-top: 30px;
     }
   }
 }
