@@ -190,7 +190,6 @@ $(document).ready(function () {
         });
     }
 
-
     //accordion
     $('.collapse').each(function () {
         $(this).on('show.bs.collapse', function () {
