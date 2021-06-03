@@ -4,8 +4,8 @@ block content
     #overlay
     include ../sections/_mobile-menu.pug
     +header([ {link: "review.html",  title: "Reviews" }, {link: "methodology.html", title: "Peer to Peer"}, {link: "top_level.html", title: "Comparison"}, {link: "#", title: "Learn" }])
-    include ../sections/main/_header-banner
-    include ../sections/_card-loan.pug
+    include ../sections/top_level/_header-banner
+    include ../sections/_toplevel-loan.pug
     include ../sections/_card-mortgage.pug
     include ../sections/_card-credit.pug
     include ../sections/_tabs.pug
@@ -15,4 +15,4 @@ block content
 
 
 block variables
-    -var title = "Page";
+    -var title = "Top level";
