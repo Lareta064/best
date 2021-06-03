@@ -1,0 +1,85 @@
+//========== faq-accordion ===========
+.row 
+    .col-xl-9
+        .faq-accordion
+            //========== ONE CARD ==============
+            .card
+                #headingOne.card-header.collapsed(data-toggle='collapse', data-target='#collapseOne', aria-expanded='false', aria-controls='collapseOne')
+                    .text-block__column
+                        .head-4
+                            h4 Loan Terms
+                    .accordion-icon
+                        +arrow
+                #collapseOne.collapse(aria-labelledby='headingOne', data-parent='#accordion')
+                    .text-paragraph
+                        .row
+                            .col-lg-8
+                                p As a loan broker, Credible doesn’t extend specific loan terms. The lowest APR for personal loans via Credible is 4.99%, but it can go up to 35.99%. Loan amounts stretch from $1,000 to $100,000, making it a very flexible site for borrowers who aren’t yet sure what they need.
+                                p Consumers should remember that terms can fluctuate even after you receive a pre-qualification offer. No loan terms are guaranteed until the lender has performed a hard credit check and confirmed that your application is accepted, so if you get a good loan offer you should act to secure it quickly.
+                                
+                            .col-lg-4
+                                .text-20
+                                    p You should remember that terms can fluctuate even after you receive a pre-qualification offer
+            //==========END ONE CARD =============
+            //==========ONE CARD ==============
+            .card
+                #headingTwo.card-header.collapsed(data-toggle='collapse', data-target='#collapseTwo', aria-expanded='false', aria-controls='collapseTwo')
+                    .text-block__column
+                        .head-4
+                            h4 Repayment Terms
+                    .accordion-icon
+                        +arrow
+                #collapseTwo.collapse(aria-labelledby='headingOne', data-parent='#accordion')
+                    .text-paragraph
+                        .row
+                            .col-lg-8
+                                p As a loan broker, Credible doesn’t extend specific loan terms. The lowest APR for personal loans via Credible is 4.99%, but it can go up to 35.99%. Loan amounts stretch from $1,000 to $100,000, making it a very flexible site for borrowers who aren’t yet sure what they need.
+                                p Consumers should remember that terms can fluctuate even after you receive a pre-qualification offer. No loan terms are guaranteed until the lender has performed a hard credit check and confirmed that your application is accepted, so if you get a good loan offer you should act to secure it quickly.
+                                
+                            .col-lg-4
+                                .text-20
+                                    p You should remember that terms can fluctuate even after you receive a pre-qualification offer
+            //==========END ONE CARD ==============
+
+            //==========ONE CARD ==============
+            .card
+                #headingThree.card-header.collapsed(data-toggle='collapse', data-target='#collapseThree', aria-expanded='false', aria-controls='collapseThree')
+                    .text-block__column
+                        .head-4
+                            h4 Privacy & Security
+                    .accordion-icon
+                        +arrow
+                #collapseThree.collapse(aria-labelledby='headingOne', data-parent='#accordion')
+                    .text-paragraph
+                        .row
+                            .col-lg-8
+                                p As a loan broker, Credible doesn’t extend specific loan terms. The lowest APR for personal loans via Credible is 4.99%, but it can go up to 35.99%. Loan amounts stretch from $1,000 to $100,000, making it a very flexible site for borrowers who aren’t yet sure what they need.
+                                p Consumers should remember that terms can fluctuate even after you receive a pre-qualification offer. No loan terms are guaranteed until the lender has performed a hard credit check and confirmed that your application is accepted, so if you get a good loan offer you should act to secure it quickly.
+                                
+                            .col-lg-4
+                                .text-20
+                                    p You should remember that terms can fluctuate even after you receive a pre-qualification offer
+            //==========END ONE CARD ==============
+            //==========ONE CARD ==============
+            .card
+                #headingFour.card-header.collapsed(data-toggle='collapse', data-target='#collapseFour', aria-expanded='false', aria-controls='collapseFour')
+                    .text-block__column
+                        .head-4
+                            h4 Help & Support
+                    .accordion-icon
+                        +arrow
+                #collapseFour.collapse(aria-labelledby='headingOne', data-parent='#accordion')
+                    .text-paragraph
+                        .row
+                            .col-lg-8
+                                p As a loan broker, Credible doesn’t extend specific loan terms. The lowest APR for personal loans via Credible is 4.99%, but it can go up to 35.99%. Loan amounts stretch from $1,000 to $100,000, making it a very flexible site for borrowers who aren’t yet sure what they need.
+                                p Consumers should remember that terms can fluctuate even after you receive a pre-qualification offer. No loan terms are guaranteed until the lender has performed a hard credit check and confirmed that your application is accepted, so if you get a good loan offer you should act to secure it quickly.
+                                
+                            .col-lg-4
+                                .text-20
+                                    p You should remember that terms can fluctuate even after you receive a pre-qualification offer
+            //==========END ONE CARD ==============
+            
+
+    .col-xl-3
+        +card-sidebar(class="card-flex")
