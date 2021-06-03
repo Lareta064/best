@@ -147,7 +147,8 @@ white-space: nowrap;
     .logo {
       margin-right: 60px;
       padding-bottom: 0;
-      margin-bottom: 14px;
+      @media(max-width:1199px){  margin-bottom: 14px;}
+    
     }
 
     .text-link {
@@ -256,9 +257,11 @@ white-space: nowrap;
     
   }
  .header-left{
+   @media(max-width:1199px){
    display: flex;
    flex-direction: column;
    align-items: flex-start;
+   }
  }
 }
 .header-floating.fix{
