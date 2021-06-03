@@ -3,8 +3,8 @@ extends ../layouts/layout.pug
 block content
     #overlay
     include ../sections/_mobile-menu.pug
-    +header([ {link: "review.html",  title: "Reviews" }, {link: "methodology.html", title: "Peer to Peer"}, {link: "top-level.html", title: "Comparison"}, {link: "sub-level.html", title: "Learn" }])
-    include ../sections/main/_header-banner
+    +header([ {link: "review.html",  title: "Reviews" }, {link: "methodology.html", title: "Peer to Peer"}, {link: "top-level.html", title: "Comparison"}, {link: "sub-level.html", title: "Learn", addClass: 'active' }])
+    include ../sections/sub-level/_header-banner
     include ../sections/_card-loan.pug
     include ../sections/_card-mortgage.pug
     include ../sections/_card-credit.pug
