@@ -85,11 +85,16 @@ input, input:focus, button, button:focus, input::placeholder {
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
-
+  margin-left: auto;
+  margin-right: auto;
   @media (min-width: 375px) {
 
     padding-left: 20px;
     padding-right: 20px;
+  }
+  @media (min-width: 580px) {
+    max-width: 540px;
+    padding: 0;
   }
   @media (min-width: 768px) {
     max-width: 630px;
@@ -98,21 +103,53 @@ input, input:focus, button, button:focus, input::placeholder {
   @media (min-width: 992px) {
     max-width: 930px;
   }
+  @media (min-width: 1200px) {
+    max-width: 1170px;
+  }
   @media (min-width: 1365px) {
     max-width: 1290px;
     min-width: 1290px;
 
   }
 }
-
+.accent-bg,
 .container-large {
   width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  @media (min-width: 580px) {
+    max-width: 540px;
+    padding: 0;
+  }
   @media (min-width: 768px) {
-    padding-left: 25px;
-    padding-right: 25px;
+    max-width: 730px;
+    padding: 0;
+  }
+  @media (min-width: 992px) {
+    max-width: 960px;
+  }
+  @media (min-width: 1200px) {
+    max-width: 1300px;
+    width: 95%;
+   
+  }
+  @media (min-width: 1365px) {
+    max-width: 1300px;
+    
+  }
+  @media (min-width: 1440px) {
+    max-width: 1390px;
+    
+
   }
 }
-
+.container-mob{
+  @media(max-width:767px){
+    padding: 0;
+  }
+}
 // titles
 .title-1 h1 {
   font-size: 80px;
@@ -131,20 +168,28 @@ input, input:focus, button, button:focus, input::placeholder {
   }
 }
 
-.section-head h2,
-.section-title h2 {
+.section-head h2 {
   font-size: 40px;
   line-height: 1.22;
   color: @purple;
   font-weight: 900;
 }
-
+.section-title h2{
+  font-size: 60px;
+  line-height: 1.23;
+  color: @purple;
+  font-weight: 900;
+  max-width: 960px;
+  @media(max-width:767px){
+    font-size: 34px;
+    line-height: 40px;
+  }
+}
 .section-title {
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
-.title-3 h3,
-.section-title h2 {
+.title-3 h3 {
   color: @purple;
   font-weight: 900;
   font-size: 34px;
@@ -171,7 +216,6 @@ input, input:focus, button, button:focus, input::placeholder {
 }
 
 .article-title h3,
-.section-title h2,
 .title-4 h4 {
   font-size: 34px;
   line-height: 1.23;
@@ -240,13 +284,13 @@ p {
 .green-text p {
   color: @green;
 }
-
+.subscribe-block.bg-darkblue,
 .bg-blue {
   border-radius: 15px;
-  background-color: @darkblue;
+  
   padding: 30px;
 }
-
+.bg-blue{background-color: @darkblue;}
 //label
 .card-label {
   border-radius: 4px;
@@ -272,4 +316,35 @@ p {
   @media (max-width: 1199px) {
     display: none;
   }
+}
+.accent-bg{
+  position: relative;
+  
+  &:after{
+    content:'';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius:20px;
+    background-color: #EAF3FF;
+    z-index: -1;
+  }
+}
+.pt-60{
+  padding-top: 60px;
+}
+.pt-100{
+  padding-top: 100px;
+}
+.pt-140{
+  padding-top: 140px;
+}
+.pb-90{
+  padding-bottom: 90px;
+}
+.pb-140{
+  padding-bottom: 140px;
 }

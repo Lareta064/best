@@ -1,30 +1,32 @@
 .loan-card__inner{
-  display: block;padding-bottom: 50px;
+  display: block;
+  padding-bottom: 130px;
   height: 100%;
 }
 .loan-card {
-  
-  width: 400px;
-  height: 530px;
+  max-width:300px;
+  width: 100%;
+  min-height: 500px;
   .ma;
   border-radius: 10px;
   position: relative;
-  overflow: hidden;
+  // overflow: hidden;
   background: #FFFFFF;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
   
-  @media (max-width: 1364px) {
-    width: 300px;
+  @media (max-width: 1199px) {
+    margin-bottom: 30px;
   }
   @media (max-width: 767px) {
-    margin-bottom: 30px;
-    width: 335px;
-
+    width: 100%;
+    max-width: 335px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .card-label {
-    top: 20px;
-    left: 20px;
+    top: 10px;
+    left: 10px;
   }
 }
 .loan-card .page-button{
@@ -32,13 +34,21 @@
   left: 25px;
   bottom: 50px;
   z-index: 10;
+  @media(max-width:1364px){
+    left: 10px;
+  }
+  @media(max-width:1199px){
+    left: 25px;
+  }
 }
 .loan-card__head {
-  //box-shadow: 0 4px 4px rgba(0, 0, 0, .25);
   background-position: center;
-  height: 200px;
+  min-height: 170px;
   background-size: cover;
   background-repeat: no-repeat;
+  img{
+    border-radius:10px 10px 0 0;
+  }
 
 }
 
@@ -50,7 +60,14 @@
   }
   .head-4 {
     color: @blue;
-    border-bottom: 1px solid rgba(77, 124, 254, .2);
+    // border-bottom: 1px solid rgba(77, 124, 254, 0.2);
+    h4{
+      display: inline;
+	background-repeat: no-repeat;
+	background-position: center bottom 1px;
+	background-size: 103% 1px;
+	background-image: linear-gradient(to right, rgba(77, 124, 254, 0.2), rgba(77, 124, 254, 0.2));
+    }
   }
 
   margin-bottom: 22px;
@@ -60,7 +77,15 @@
   padding-left: 30px;
   padding-right: 30px;
   padding-top: 20px;
-  margin-bottom: 30px;
+  // padding-bottom: 30px;
+  @media(max-width:1364px){
+    padding-left: 10px;
+  padding-right: 10px;
+  }
+  @media(max-width:1199px){
+    padding-left: 30px;
+  padding-right: 30px;
+  }
 }
 
 .loan-card__footer {
@@ -78,11 +103,11 @@
     margin-left: auto;
     position: absolute;
     bottom: 59px;
-    right: 65px;
+    right: 40px;
     @media(max-width:1364px){
-      right: 35px;
+      right: 23px;
     }
-
+    
     &:hover{
       color: @red;
       border-bottom-color: rgba(229, 69, 69, .15);
@@ -154,7 +179,7 @@
 }
 
 .loan-cards {
-  margin-bottom: 100px;
+  margin-bottom: 80px;
   @media(max-width:767px){
     margin-bottom: 72px;
   }
@@ -165,9 +190,9 @@
   justify-content: center;
   align-items: center;
 }
-.loan-card__head img{
-  width: 70%;
-}
+// .loan-card__head img{
+//   width: 70%;
+// }
 .loan-card--cred .loan-card__head {
   background-color: #2156A4;
 
@@ -195,52 +220,94 @@
     width: 32%;
   }
 }
-.loan-card.loan-card--cred {
-  .button-light {
-    display: none;
-  }
 
-  @media (min-width: 768px) and (max-width: 991px) {
-    margin-bottom: 45px;
-    width: 100%;
-    height: 458px;
-    max-width: 630px;
-    margin-left: auto;
-    margin-right: auto;
-    .loan-card__head img{
-      width: 42%;
-    }
-    .flex-inner {
-      display: flex;
-    }
-
-    .loan-card__terms {
-      margin-bottom: 0;
-    }
-
-    .loan-card__terms .terms-item + .terms-item,
-    .loan-card__rating {
-      margin-left: 56px;
-    }
-
-    .page-button, .button-light {
-      width: 270px;
-      display: inline-block;
-      text-align: center;
-    }
-
-    .button-light {
-      position: absolute;
-    right: 35px;
-    bottom: 50px;
-    }
-
-    .button-link {
-      display: none;
-    }
-  }
-}
-.loan-card__inner:hover .head-4{
+.loan-card__inner:hover .head-4 h4{
   color: @red;
   border-color: rgba(229, 69, 69, .2);
+  background-image: linear-gradient(to right, rgba(229, 69, 69, .2), rgba(229, 69, 69, .2));
+}
+.card-sidebar-wrapper{
+  width: 100%;
+  max-width:300px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  @media(max-width:767px){
+    max-width:335px;
+    display: flex;
+    justify-content: flex-start;
+    
+
+  }
+}
+.card-sidebar{
+  max-width:300px;
+  min-height: 500px;
+  width: 100%;
+  padding-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  @media(max-width:767px){
+    margin-left: auto;
+  margin-right: auto;
+  }
+  @media(max-width:375px){
+    margin-left: 0;
+  }
+  
+}
+.card-sidebar__img{
+  // height: 250px;
+  background-color: #FFE8DB;
+}
+.card-sidebar__body{
+  padding-top: 40px;
+}
+.card-sidebar__label{
+  min-width: 50px;
+  height: 28px;
+  display: inline-block;
+  border-radius:4px;
+  text-transform: uppercase;
+  
+  font-size: 16px;
+  font-weight: 700;
+  color: @purple;
+  border: 1px solid @purple;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.card-sidebar__text p{
+  font-size: 20px;
+  line-height: 1.4;
+  color: @purple;
+  padding-top: 10px;
+  padding-right: 20px;
+  font-weight: 700;
+  -webkit-line-clamp: 5;
+  display: -webkit-box; 
+  -webkit-box-orient: vertical;
+  overflow: hidden; 
+}
+.card-block__button{
+  margin-top: 40px;
+  @media(max-width:1199px){
+    margin-top: 10px;
+  }
+}
+@media(min-width:768px) and(max-width:1199px){
+  .card-flex{
+    display: flex;
+    min-height: 250px;
+    .card-sidebar__img{
+      flex-shrink: 0;
+      margin-right: 30px;
+    }
+    .card-sidebar__body{
+      width: 300px;
+      flex-shrink: 0;
+      padding-top: 0;
+    }
+  }
 }

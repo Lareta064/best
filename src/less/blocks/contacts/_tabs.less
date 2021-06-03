@@ -1,0 +1,30 @@
+.tabs-menu ul {
+	display: inline-flex;
+	align-items: center;
+	background-color: #EAF3FF;
+	border-radius:5px;
+	li{
+		height: 52px;
+		line-height: 52px;
+		padding-left: 30px;
+		padding-right: 30px;
+		border-radius: 5px;
+		font-weight: bold;
+		font-size: 20px;
+		transition: .5s;
+		color: #4D7CFE;
+	}
+	li:hover{
+		color: @red;
+		//background-color: @purple;
+	}
+	li.active{
+		color: #fff;
+		background-color: @purple;
+	}
+}
+.tabs-content{padding-top: 54px;}
+.tabs-content__item{
+	display: none;
+	&.active{display: block;}
+}

@@ -2,7 +2,7 @@ mixin header(arg)
 	header.header
 		.container
 			.header-content
-				a(href="index.html").logo bestofpersonalloans.com
+				a(href="index.html").logo Best Reviews By Consumers
 				.header-menu
 					ul
 						each item in arg
@@ -30,6 +30,111 @@ mixin floatHeader
 					a(href="index.html").page-close.d-flex.d-md-none
 						+close
 
+mixin loan-card(label, imgSrc, title, per1, per2)
+	.loan-card
+		a(href="review.html").loan-card__inner
+			.card-label !{label}
+			.loan-card__head
+				img(src="img/cards/"+ imgSrc +".jpg", width="335"  alt="logo")
+			.loan-card__body
+				.loan-card__title
+					.head-4
+						h4 !{title}
+					.page-tooltip
+						span ?
+						.page-tooltip__box
+							p Lenders often determine loan approval based on combo of loan purpose & amount
+				.flex-inner
+					.loan-card__terms
+						.terms-item.green-text
+							p !{per1}%
+							p Min APP
+						.terms-item
+							p !{per2} 
+								span years
+							p MAX loan term
+					.loan-card__rating
+						.rating-star
+							+star
+							+star
+							+star
+							+star
+							+star
+						.rating-info
+							p 2,619 reviews on Starpilot
+			.loan-card__footer
+				.button-link Review
+		a(href="#!" data-toggle="modal" data-target="#modalForm").page-button.w-200 Get your rate
+mixin mort-card(label, imgSrc, title, per1, per2)
+	.loan-card.loan-card--mortgage
+		a(href="review.html").loan-card__inner
+			.card-label !{label}
+			.loan-card__head
+				img(src="img/cards/"+ imgSrc +".jpg", alt="logo")
+			.loan-card__body
+				.loan-card__title
+					.head-4
+						h4 !{title}
+					.page-tooltip
+						span ?
+						.page-tooltip__box
+							p Lenders often determine loan approval based on combo of loan purpose & amount
+				.flex-inner
+					.loan-card__terms
+						.terms-item.green-text
+							p !{per1}%
+							p Min Down Payment
+						.terms-item
+							p !{per2} 
+								span years
+							p Repayment terms
+					.loan-card__rating
+						.rating-star
+							+star
+							+star
+							+star
+							+star
+							+star
+						.rating-info
+							p 2,619 reviews on Starpilot
+			.loan-card__footer
+				.button-link Review
+		a(href="#!" data-toggle="modal" data-target="#modalForm").page-button.w-200 Get your rate
+mixin card-sidebar
+	.card-sidebar&attributes(attributes)
+		.card-sidebar__img
+			img(src="img/cards/fvi.jpg", width="300" alt="img")
+		.card-sidebar__body
+			.card-sidebar__label
+				p FVI
+			.card-sidebar__text
+				p The Annual Percentage Rate (APR) is the cost you pay each year to borrow money, including fees, expressed as a percentage
+mixin subscribe-block(colorClass)
+	.subscribe-block-wrapper
+		.row
+			.col-xl-9
+				.subscribe-block(class=" "+ colorClass)
+					.block-title
+						h3 Get a full personal loan report via&nbsp;email now
+					form.subscribe-form(action="#")
+						.form-item
+							input(type="email" placeholder="Input your email")
+							.error-text
+								p Please recheck your email, it does not look correct
+					
+						.form-btn
+							button.page-button.w-100 Get your report
+
+				//========== SUCCESS FORM ==========
+				.recived-block.bg-darkblue
+					.block-title
+						h3 Your request has been received
+					.recived-block__text
+						.recived-block__col
+							p In order to proceed with your request we’ve sent you an email with some steps you need to take next. Please check you email ivanmarasin@gmail.com
+						.recived-block__btn
+							button.button-light.w-100 Edit email address
+				//========== END SUCCESS FORM ==========
 mixin offerCards
 	.offer-cards
 		.row

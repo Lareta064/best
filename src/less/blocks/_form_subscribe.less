@@ -1,12 +1,14 @@
 .subscribe-block {
   padding-bottom: 50px;
-  margin-bottom: 50px;
+  // margin-bottom: 50px;
   min-width: 335px;
   @media (max-width: 767px) {
     padding-top: 20px;
     padding-bottom: 40px;
   }
-
+  @media (max-width: 374px) {
+    min-width: unset;
+  }
   .block-title {
     h3 {
       color: #fff;
@@ -52,8 +54,8 @@
   }
 
   .form-btn {
-    min-width: 340px;
-    max-width: 340px;
+    min-width: 240px;
+    max-width: 240px;
     margin-left: 30px;
 
     @media (max-width: 1199px) {
@@ -62,8 +64,8 @@
     }
 
     @media (max-width: 767px) {
-      min-width: 100%;
-      max-width: 100%;
+      min-width: 180px;
+      max-width: 180px;
       margin-left: 0;
     }
 
@@ -100,11 +102,11 @@
 }
 
 .recived-block__col {
-  width: 70%;
-  @media (max-width: 1364px) {
-    width: 63%;
-    margin-bottom: 30px;
-  }
+  width: 52%;
+  // @media (max-width: 1364px) {
+  //   width: 63%;
+  //   margin-bottom: 30px;
+  // }
   @media (max-width: 992px) {
     width: 100%;
     margin-bottom: 30px;
@@ -121,11 +123,14 @@
   }
 
 }
-
-.recived-block.bg-blue {
-  background-color: @purple;
+.bg-darkblue{
+ background-color: @purple; 
+}
+.recived-block{
   color: #fff;
-
+  border-radius: 15px;
+  padding: 30px;
+  display: none;
   p {
     color: #fff;
     font-size: 20px;
@@ -137,7 +142,7 @@
 
   }
 }
-
+.recived-block.active{display: block;}
 .recived-block__btn .button-light {
   .tr;
   color: #fff;

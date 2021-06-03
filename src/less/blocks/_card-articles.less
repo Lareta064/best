@@ -1,13 +1,24 @@
 .loan-articles {
   margin-bottom: 120px;
-
+ .button-box{
+      margin-top: 30px;
+       max-width:960px;
+  }
   .section-title {
     margin-bottom: 40px;
+  } 
     @media (max-width: 767px) {
-      margin-bottom: 25px;
+      .section-title{margin-bottom: 25px; }
+      
+      .button-box{
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 30px;
+       
+      }
     }
   }
-}
+
 
 .articles-cards {
   display: block;
@@ -47,6 +58,8 @@
 
   @media (max-width: 1199px) {
     max-width: 300px;
+    margin-bottom: 30px;
+
   }
 
 
@@ -57,7 +70,7 @@
 }
 
 .article-card__head {
-  height: 200px;
+  height: 170px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -66,7 +79,7 @@
 
 .article-card__body {
   padding-top: 30px;
-  padding-right: 40px;
+  padding-right: 30px;
   padding-left: 30px;
 
   @media (min-width: 768px) and (max-width: 1199px) {
@@ -90,7 +103,7 @@
 
   p {
     display: -webkit-box;
-    -webkit-line-clamp: 5;
+    -webkit-line-clamp: 6;
     -webkit-box-orient: vertical;
     overflow: hidden;
 
@@ -100,38 +113,38 @@
   }
 }
 
-.article-card-1 {
-  .article-card__terms p {
-    @media (min-width: 768px) and (max-width: 991px) {
-      -webkit-line-clamp: 3;
-    }
-  }
-}
+// .article-card-1 {
+//   .article-card__terms p {
+//     @media (min-width: 768px) and (max-width: 991px) {
+//       -webkit-line-clamp: 3;
+//     }
+//   }
+// }
 
-.article-card-2, .article-card-3 {
-  .article-card__terms p {
-    @media (min-width: 768px) and (max-width: 991px) {
-      -webkit-line-clamp: 7;
-    }
-  }
-}
+// .article-card-2, .article-card-3 {
+//   .article-card__terms p {
+//     @media (min-width: 768px) and (max-width: 991px) {
+//       -webkit-line-clamp: 7;
+//     }
+//   }
+// }
 
 
-.article-card.article-card-1 {
-  @media (max-width: 1199px) {
-    margin-bottom: 45px;
-  }
+// .article-card.article-card-1 {
+//   @media (max-width: 1199px) {
+//     margin-bottom: 45px;
+//   }
 
-  @media (max-width: 991px) {
-    width: 100%;
-    max-width: 630px;
-  }
+//   @media (max-width: 991px) {
+//     width: 100%;
+//     max-width: 630px;
+//   }
 
-  @media (max-width: 767px) {
-    width: 100%;
-    max-width: 335px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
+//   @media (max-width: 767px) {
+//     width: 100%;
+//     max-width: 335px;
+//     margin-left: auto;
+//     margin-right: auto;
+//   }
+// }
 
