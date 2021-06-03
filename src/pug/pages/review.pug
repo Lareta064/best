@@ -4,11 +4,12 @@ block content
 	#overlay
 	+floatHeader
 	include ../sections/review/_header-banner
-	include ../sections/review/_review-content-new.pug
-	include ../sections/review/_faq.pug
-	include ../sections/review/_compares-block.pug
-	include ../sections/_card-articles-section.pug
-	include ../sections/_footer.pug
+	main.page-review
+		include ../sections/review/_review-content-new.pug
+		include ../sections/review/_faq.pug
+		include ../sections/review/_compares-block.pug
+		include ../sections/_card-articles-section.pug
+		include ../sections/_footer.pug
 
 block variables
 	-var title = "Page";
