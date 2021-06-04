@@ -1,12 +1,14 @@
-.compares {
+.compares{
   padding-top: 60px;
   padding-bottom: 90px;
 }
 .compares-content {
+  
   position: relative;
   overflow: hidden;
   @media (max-width: 767px) {
     .container {
+
       padding-right: 0;
     }
   }
@@ -14,12 +16,12 @@
 
 .compares-table {
   padding-top: 30px;
-  padding-left: 30px;
+  padding-left: 15px;
   padding-bottom: 40px;
   overflow-x: auto;
   background-color: #fff;
   width: 100%;
-  border-radius: 10px;
+  border-radius:10px;
 
   &::-webkit-scrollbar {
     display: none;
@@ -41,14 +43,13 @@
     border-radius: 4px;
   }
 
-  td,
-  th {
+  td, th {
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 8px;
     padding-bottom: 8px;
     white-space: nowrap;
-    min-width: 220px;
+    min-width: 200px;
     @media (max-width: 991px) {
       min-width: 120px;
       max-width: 140px;
@@ -58,8 +59,7 @@
     }
   }
 
-  td.green-text,
-  td.red-text {
+  td.green-text, td.red-text {
     font-weight: 700;
   }
 }
@@ -72,42 +72,44 @@
   // margin-top: 60px;
 
   .article-title {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
 }
 .compare-articles__item {
   padding: 20px 30px 60px;
   background-color: #fff;
-  border-radius: 10px;
+  border-radius:10px;
   margin-top: 24px;
-
-  .compare-article__text {
-    max-width: 600px;
-  }
 }
+
 
 .article-author__photo {
   width: 190px;
   height: 190px;
   border-radius: 50%;
   overflow: hidden;
+  flex-shrink:0;
+  margin-right: 30px;
+  @media(max-width:991px){
+   margin-right: 0;
+   margin-top: 30px;
+  }
 }
 
 .articles-author-info {
-
   padding-bottom: 50px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
-  // margin-bottom: 100px;
+  display: flex;
+  @media(max-width:991px){
+    flex-direction: column;
+  }
 
   h5 {
     font-size: 20px;
     color: @purple;
     line-height: 1.2;
     font-weight: 900;
-  }
 
-  .article-author__photo{
-    margin-right: 30px;
   }
 
   .article-author__name {
@@ -115,22 +117,14 @@
     margin-bottom: 20px;
   }
 }
-.compares .card-sidebar {
-  @media (max-width: 1199px) {
+.compares .card-sidebar{
+  @media(max-width:1199px){
     margin-left: 0;
     margin-top: 40px;
   }
 }
-.compare-bottom {
-  .color-block {
+.compare-bottom{
+  .color-block{
     margin-bottom: 0;
-
-    .section-title {
-      margin-bottom: 40px;
-    }
-
-    .color-block__text{
-      max-width: 600px;
-    }
   }
 }
