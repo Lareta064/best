@@ -1,11 +1,10 @@
-section.compares
+section.compares.accent-bg
 	.container
-		.title-3
-			h3 How Credible Compares
-	.compares-content
-		.container
-			.row
-				.col-xl-8
+		.section-title
+			h2 How Credible Compares
+		.row
+			.col-xl-9
+				.compares-content
 					.compares-table
 						table
 							tr
@@ -44,27 +43,31 @@ section.compares
 								td Debt consolidation loans
 								td Variety of loan options
 								td Flexible terms
+
+					.compare-articles
+						.compare-articles__item
+							.article-title
+								h4 Credible vs 
+									a(href="#!").text-link LendingTree
+							.compare-article__text
+								p When compared to LendingTree, Credible has similar APRs but offers much higher maximum loan amounts. Credible can't compete with LendingTree's more flexible loan terms but if you have good credit you'll be able to take advantage of Credible's favorable rates.
+						.compare-articles__item
+							.article-title
+								h4 Credible vs 
+									a(href="#!").text-link Monevo
+							.compare-article__text
+								p When compared to LendingTree, Credible has similar APRs but offers much higher maximum loan amounts. Credible can't compete with LendingTree's more flexible loan terms but if you have good credit you'll be able to take advantage of Credible's favorable rates.
+			.col-xl-3
+				+card-sidebar2
+.compare-bottom.pt-140
 	.container
 		.row
-			.col-xl-8
-				.compare-articles
-					.compare-articles__item
-						.article-title
-							h4 Credible vs 
-								a(href="#!").text-link LendingTree
-						.compare-article__text
-							p When compared to LendingTree, Credible has similar APRs but offers much higher maximum loan amounts. Credible can't compete with LendingTree's more flexible loan terms but if you have good credit you'll be able to take advantage of Credible's favorable rates.
-					.compare-articles__item
-						.article-title
-							h4 Credible vs 
-								a(href="#!").text-link Monevo
-						.compare-article__text
-							p When compared to LendingTree, Credible has similar APRs but offers much higher maximum loan amounts. Credible can't compete with LendingTree's more flexible loan terms but if you have good credit you'll be able to take advantage of Credible's favorable rates.
-					.color-block
-						h4  Summary
-						p Credible is a fast and free online loan brokerage service which returns multiple pre-qualification personal loan offers for borrowers. Appreciated by many consumers for its swift response time and clear comparison tables, Credible is a useful tool for anyone with a high credit rating and a need to consolidate debt, finance a major purchase, or open a business. If you don't have good credit rating, you’ll need to look elsewhere.
+			.col-xl-9
+				.color-block
+					h4  Summary
+					p Credible is a fast and free online loan brokerage service which returns multiple pre-qualification personal loan offers for borrowers. Appreciated by many consumers for its swift response time and clear comparison tables, Credible is a useful tool for anyone with a high credit rating and a need to consolidate debt, finance a major purchase, or open a business. If you don't have good credit rating, you’ll need to look elsewhere.
 
-				.articles-author-info
+				.articles-author-info.pt-140
 					.article-author__photo
 						img(src="img/compares/author.jpg", alt="photo" width="100")
 					.article-author__name

@@ -1,5 +1,9 @@
+.compares{
+  padding-top: 60px;
+  padding-bottom: 90px;
+}
 .compares-content {
-  padding-top: 14px;
+  
   position: relative;
   overflow: hidden;
   @media (max-width: 767px) {
@@ -11,10 +15,13 @@
 }
 
 .compares-table {
-  padding-top: 25px;
+  padding-top: 30px;
+  padding-left: 15px;
+  padding-bottom: 40px;
   overflow-x: auto;
-  border-top: 1px solid rgba(0, 0, 0, .15);
+  background-color: #fff;
   width: 100%;
+  border-radius:10px;
 
   &::-webkit-scrollbar {
     display: none;
@@ -62,16 +69,19 @@
 }
 
 .compare-articles {
-  margin-top: 60px;
+  // margin-top: 60px;
 
   .article-title {
     margin-bottom: 20px;
   }
 }
-
-.compare-articles__item + .compare-articles__item {
-  margin-top: 50px;
+.compare-articles__item {
+  padding: 20px 30px 60px;
+  background-color: #fff;
+  border-radius:10px;
+  margin-top: 24px;
 }
+
 
 .article-author__photo {
   width: 100px;
@@ -83,7 +93,7 @@
 .articles-author-info {
   padding-bottom: 50px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
-  margin-bottom: 100px;
+  // margin-bottom: 100px;
 
   h5 {
     font-size: 20px;
@@ -96,5 +106,16 @@
   .article-author__name {
     margin-top: 30px;
     margin-bottom: 20px;
+  }
+}
+.compares .card-sidebar{
+  @media(max-width:1199px){
+    margin-left: 0;
+    margin-top: 40px;
+  }
+}
+.compare-bottom{
+  .color-block{
+    margin-bottom: 0;
   }
 }
