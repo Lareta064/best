@@ -1,0 +1,26 @@
+.review-banner {
+  margin-top: 175px;
+}
+@media (max-width: 767px) {
+  .review-banner {
+    margin-top: 165px;
+  }
+}
+.review-banner__img {
+  border-radius: 15px;
+  background-color: #2156A4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+.review-banner__img img {
+  max-width: unset;
+  height: 80px;
+  width: auto;
+}
+@media (max-width: 767px) {
+  .loan-terms-info .col-md-6 + .col-md-6 {
+    margin-top: 40px;
+  }
+}
