@@ -1,11 +1,24 @@
-.pt-100.pb-140 
+.pt-100
 	section.top-level
-		.container 
+		.container
 			.top-level-block
 				.row 
-					.col-xl-9 
-						.top-level-cards
-							.section-title 
-								h2 Рersonal loans
-							.top-level-cards__desk
-								p Personal loans can be offered by banks, credit unions, or online lenders. The money you borrow must be repaid over time, typically with interest. Some lenders may also charge fees for personal loans
+					+levelblock('Рersonal loans','Personal loans can be offered by banks, credit unions, or online lenders. The money you borrow must be repaid over time, typically with interest. Some lenders may also charge fees for personal loans', '1', '2', '3', '28')
+					.col-xl-3 
+						+card-sidebar3(12, 'Take a Loan Only When Absolutely Necessary', 'A personal loan should only be taken after a thorough assessment of your requirements and already existing loan/repayment commitments')
+.pt-140
+	section.top-level.accent-bg.top-level--mortgage
+		.container
+			.top-level-block
+				.row 
+					+levelblock('Mortgages','A mortgage is usually a loan sanctioned against an immovable asset like a house or a commercial property. The lender keeps the asset as collateral until the borrower repays the total loan amount', '4', '5', '6', '32')
+					.col-xl-3 
+						+card-sidebar3(1, 'Start with your credit report', 'You want to make sure that your credit report is as accurate as possible, your scores are where you want them to be, and no one else is getting access to your credit, possibly harming your scores')
+.pt-140
+	section.top-level
+		.container
+			.top-level-block
+				.row 
+					+levelblock('Credit cards','Personal loans can be offered by banks, credit unions, or online lenders. The money you borrow must be repaid over time, typically with interest. Some lenders may also charge fees for personal loans', '1', '2', '3', '28')
+					.col-xl-3 
+						+card-sidebar3(12, 'Take a Loan Only When Absolutely Necessary', 'A personal loan should only be taken after a thorough assessment of your requirements and already existing loan/repayment commitments')
