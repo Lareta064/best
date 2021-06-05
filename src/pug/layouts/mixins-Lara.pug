@@ -33,7 +33,8 @@ mixin floatHeader
 mixin loan-card(label, imgSrc, title, per1, per2)
 	.loan-card
 		a(href="review.html").loan-card__inner
-			.card-label !{label}
+			if label != ''
+				.card-label !{label}
 			.loan-card__head
 				img(src="img/cards/"+ imgSrc +".jpg", width="335"  alt="logo")
 			.loan-card__body

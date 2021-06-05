@@ -1,17 +1,25 @@
 .pt-140
 	section.more-offers
 		.container
+			.section-title 
+				h2 More offers
 			.row
 				.col-xl-9
-					.col-md-6.col-xl-3
-						+loan-card('Best APR', '1', 'Credible', '4', '15')
-					.col-md-6.col-xl-3
-						+loan-card('Best loan term', '2', 'LendingTree', '6', '20')
-					.col-md-6.col-xl-3
-						+loan-card('Best rating', '3', 'LendingClub', '6', '12')
-					.col-md-6.col-xl-3
-						+loan-card('Best APR', '1', 'Credible', '4', '15')
-					.col-md-6.col-xl-3
-						+loan-card('Best loan term', '2', 'LendingTree', '6', '20')
-					.col-md-6.col-xl-3
-						+loan-card('Best rating', '3', 'LendingClub', '6', '12')
+					.offers-cards__wrapper
+						.row
+							.col-md-6.col-xl-4
+								+loan-card('', '1', 'Credible', '4', '15')
+							.col-md-6.col-xl-4
+								+loan-card('', '2', 'LendingTree', '6', '20')
+							.col-md-6.col-xl-4
+								+loan-card('', '3', 'LendingClub', '6', '12')
+							.col-md-6.col-xl-4
+								+loan-card('', '1', 'Credible', '4', '15')
+							.col-md-6.col-xl-4
+								+loan-card('', '2', 'LendingTree', '6', '20')
+							.col-md-6.col-xl-4
+								+loan-card('', '3', 'LendingClub', '6', '12')
+					.offers-cards__wrapper
+						a(href="#!").button-light.w-100 Show all personal loan offers
+				.col-xl-3
+					+card-sidebar2
