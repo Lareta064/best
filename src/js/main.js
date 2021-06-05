@@ -13,7 +13,13 @@ $(document).ready(function () {
             }
         });
     }
-
+    /*add class for orange label*/
+    const cardLabel = document.querySelectorAll('.card-label')
+    for(let item of cardLabel){
+        if (item.textContent == 'Best rating'){
+            item.classList.add('label--orange');
+        }
+    }
     // click for show more offer cards
     let hideOfferCards = document.querySelectorAll('.hide-card');
     const btnShowOfferCards = document.querySelector('#show-cards');

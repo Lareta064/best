@@ -2,7 +2,7 @@ mixin header(arg)
 	header.header
 		.container
 			.header-content
-				a(href="index.html").logo Best Reviews By Consumers
+				a(href="index.html").logo Best Reviews By&nbsp;Consumers
 				.header-menu
 					ul
 						each item in arg
@@ -121,6 +121,17 @@ mixin card-sidebar2
 				h3 Take a Loan Only When Absolutely Necessary
 			.card-sidebar__text
 				p A personal loan should only be taken after a thorough assessment of your requirements and already existing loan/repayment commitments
+mixin card-sidebar3(tip, title, text)
+	.card-sidebar.card-sidebar--long.card-flex
+		.card-sidebar__img
+			img(src="img/cards/fvi.jpg", width="300" alt="img")
+		.card-sidebar__body
+			.card-sidebar__label
+				p Tip ##{tip}
+			.card-sidebar__title
+				h3 #{title}
+			.card-sidebar__text
+				p #{text}
 
 mixin subscribe-block(colorClass)
 	.subscribe-block-wrapper
@@ -317,3 +328,34 @@ mixin offerCards
 						.loan-card__footer
 							a(href="review.html").button-link Review
 					a(href="#!").page-button.w-200 Get your rate
+mixin levelblock(title,text, img1, img2, img3, num)
+	.col-xl-9 
+		.top-level-cards
+			.section-title 
+				h2 #{title}
+			.top-level-cards__desk
+				p #{text}
+			.cards-short-wrapper
+				.row
+					.col-md-6.col-xl-3
+						.card-short 
+							.card-label.card-label--light Best APR
+							.card-short-img
+								img(src="img/cards/"+img1+".jpg", width="300" alt="img")
+					.col-md-6.col-xl-3
+						.card-short 
+							.card-label.card-label--light Best loan term
+							.card-short-img
+								img(src="img/cards/"+img2+".jpg", width="300" alt="img")
+					.col-md-6.col-xl-3
+						.card-short 
+							.card-label.card-label--light Best rating
+							.card-short-img
+								img(src="img/cards/"+img3+".jpg", width="300" alt="img")
+					.col-md-6.col-xl-3
+						.card-short--text
+							p +#{num}
+			.top-level__buttons
+				a(href="#").page-button.w-300 Get your rate now
+				a(href="#").button-link.d-none.d-xl-inline Check 136 customer reviews
+				a(href="#").button-link.d-inline.d-xl-none Check 136 reviews

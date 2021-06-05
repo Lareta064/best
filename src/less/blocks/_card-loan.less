@@ -249,9 +249,13 @@
   margin-right: auto;
   position: sticky;
   top: 0;
+  @media(max-width:1199px){
+    padding-bottom: 0px;
+  }
   @media(max-width:767px){
     margin-left: auto;
   margin-right: auto;
+  
   }
   @media(max-width:375px){
     margin-left: 0;
@@ -280,6 +284,12 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+}
+.card-sidebar--long .card-sidebar__label{
+  text-transform: unset;
+}
+.card-label.label--orange{
+  background-color: @orange;
 }
 .card-sidebar__text p{
   font-size: 20px;
