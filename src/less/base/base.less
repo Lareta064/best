@@ -120,15 +120,15 @@ input, input:focus, button, button:focus, input::placeholder {
   padding-left: 10px;
   padding-right: 10px;
   @media (min-width: 580px) {
-    max-width: 540px;
+    max-width: 570px;
     padding: 0;
   }
   @media (min-width: 768px) {
-    max-width: 730px;
+    max-width: 750px;
     padding: 0;
   }
   @media (min-width: 992px) {
-    max-width: 960px;
+    max-width: 980px;
   }
   @media (min-width: 1200px) {
     max-width: 1300px;
@@ -136,7 +136,8 @@ input, input:focus, button, button:focus, input::placeholder {
    
   }
   @media (min-width: 1365px) {
-    max-width: 1300px;
+    max-width: 1320px;
+    width: 100%;
     
   }
   @media (min-width: 1440px) {
@@ -240,10 +241,6 @@ p {
   color: #000000;
 }
 
-.text-30 p {
-  font-size: 30px;
-  line-height: 1.2;
-}
 
 .article-title h4,
 .text-24 p {
@@ -256,7 +253,12 @@ p {
     font-size: 20px;
   }
 }
-
+.text-30 p{
+  font-size: 30px;
+  line-height: 1.23;
+  font-weight: 900;
+  @media(max-width:767px){font-size: 24px;}
+}
 .text-20 p {
   font-size: 20px;
   line-height: 1.2;
@@ -333,6 +335,9 @@ p {
     z-index: -1;
   }
 }
+.pt-30{
+  padding-top: 30px;
+}
 .pt-60{
   padding-top: 60px;
 }
@@ -342,8 +347,14 @@ p {
 .pt-140{
   padding-top: 140px;
 }
+.pt-160	{
+  padding-top: 160px;
+}
 .pb-90{
   padding-bottom: 90px;
+}
+.pb-110{
+  padding-bottom: 100px;
 }
 .pb-140{
   padding-bottom: 140px;

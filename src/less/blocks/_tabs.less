@@ -9,7 +9,10 @@
 	overflow: auto;
 	position: relative;
 	@media(max-width:767px){
-		// margin-left: 20px;
+		overflow: auto;
+		&::-webkit-scrollbar {
+			display: none;
+		  }
 	}
 }
 .tabs-menu-box{
@@ -25,6 +28,10 @@
 	width: 100px;
 	background: linear-gradient(270deg, #EAF3FF 0%, rgba(234, 243, 255, 0) 100%);
 	z-index: 2;
+	display: none;
+	@media(max-width:767px){
+		display: block;
+	}
 }
 .tabs-menu ul {
 	display: inline-flex;
@@ -58,18 +65,18 @@
 .tabs-content{
 	padding-top: 54px;
 	@media(max-width:767px){
-		padding-right: 20px;
+		padding-right: 40px;
 	}
 }
 .tabs-content__item{
 	display: none;
 	&.active{display: block;}
 }
-.faq-content .col-xl-9{
-	@media(max-width:767px){
-		padding-right: 0;
-	}
-}
+// .faq-content .col-xl-9{
+// 	@media(max-width:767px){
+// 		padding-right: 0;
+// 	}
+// }
 // .faq-content .card-sidebar{
 // 	@media(max-width:767px){
 // 		margin-left: 20px;

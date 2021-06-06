@@ -192,6 +192,7 @@
 // .loan-card__head img{
 //   width: 70%;
 // }
+
 .loan-card--cred .loan-card__head {
   background-color: #2156a4;
 }
@@ -218,6 +219,35 @@
     width: 32%;
   }
 }
+
+// .loan-card--cred .loan-card__head {
+//   background-color: #2156A4;
+
+// }
+
+// .loan-card--lfree .loan-card__head {
+//   background-color: #0F1F2F;
+// }
+
+// .loan-card--lclub .loan-card__head {
+//   background-color: #0e3c60;
+// }
+// .loan-card--amon{
+//   background-color: #fff;
+//   .loan-card__head{
+//     border: 12px solid @purple;
+//   }
+// }
+// .loan-card--funds .loan-card__head{
+//   background-color: #050A0D;
+// }
+// .loan-card--upgrade .loan-card__head{
+//   background-color: #00a669;
+//   img{
+//     width: 32%;
+//   }
+// }
+
 
 .loan-card__inner:hover .head-4 h4 {
   color: @red;
@@ -247,9 +277,16 @@
   padding-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
-  @media (max-width: 767px) {
+  position: sticky;
+  top: 0;
+  @media(max-width:1199px){
+    padding-bottom: 0px;
+  }
+  @media(max-width:767px){
     margin-left: auto;
-    margin-right: auto;
+  margin-right: auto;
+  min-height: unset;
+  
   }
   @media (max-width: 375px) {
     margin-left: 0;
@@ -269,6 +306,9 @@
   border-radius: 4px;
   text-transform: uppercase;
 
+  padding-left: 10px;
+  padding-right: 10px;
+
   font-size: 16px;
   font-weight: 700;
   color: @purple;
@@ -277,7 +317,14 @@
   align-items: center;
   justify-content: center;
 }
-.card-sidebar__text p {
+
+.card-sidebar--long .card-sidebar__label{
+  text-transform: unset;
+}
+.card-label.label--orange{
+  background-color: @orange;
+}
+.card-sidebar__text p{
   font-size: 20px;
   line-height: 1.4;
   color: @purple;
@@ -294,9 +341,14 @@
   @media (max-width: 1199px) {
     margin-top: 10px;
   }
+  @media(max-width:767px){
+    margin-top: 40px;
+  }
 }
-@media (min-width: 768px) and(max-width:1199px) {
-  .card-flex {
+
+@media(min-width:768px) and(max-width:1199px){
+  .card-flex{
+
     display: flex;
     min-height: 250px;
     .card-sidebar__img {
@@ -306,7 +358,31 @@
     .card-sidebar__body {
       width: 300px;
       flex-shrink: 0;
-      padding-top: 0;
+      padding-top: 0!important;
     }
   }
 }
+
+.card-sidebar__title h3{
+  font-size: 20px;
+  line-height: 1.4;
+  font-weight: 700;
+  color: @purple;
+  padding-top: 10px;
+  
+}
+.card-sidebar--long{
+  .card-sidebar__body{
+    padding-top: 50px;
+  }
+  .card-sidebar__text p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    padding-top: 14px;
+  }
+}
+.page-review .card-sidebar{
+  top: 95px;
+}
+

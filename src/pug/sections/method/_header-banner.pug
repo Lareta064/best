@@ -1,60 +1,49 @@
 header.inner-header
-	.container
-		.title-1.pt-mob
-			h1 Methodology: how do we pick the&nbsp;best Personal loans
-section.methodology-content
-	.container
-		.text-articles.mt-10
-			article.text-article
-				.article-title
-					h4 Lender Types
-				.text-block
-					.row
-						.col-lg-8
-							.text-block__column
-								p The type of lender that services a mortgage can have a significant impact on the rates offered and the service provided. We researched several types of companies, from online lenders and brokers to large national banks and credit unions.
-						.col-lg-4
-							.text-block__column.text-20
-								p Credible returns up to 6 preliminary loan offers so that you can easily article.text-article
-			article.text-article
-				.article-title
-					h4 Available Mortgage Types
-				.text-block
-					.row
-						.col-lg-8
-							.text-block__column
-								p  We looked at whether the mortgage lenders offer fixed- and adjustable-rate loans, government-sponsored programs such as FHA, VA, and USDA, or other types such as jumbo, non-qualifying, or customizable loans.
-			article.text-article
-				.text-block
-					.row
-						.col-lg-8
-							.color-block
-								h4  Customer Experience
-								p We considered the added benefits and perks that lenders provide to assist the customer and simplify the mortgage process, such as an easy-to-use website, proprietary mobile apps, mortgage calculators, in which states they provide service, and the customer service options, among many other factors.
-						.col-lg-4.fl-center
-							.text-block__column.text-20
-								p Unlike many loan broker services, Credible is transparent about its fees
-			article.text-article
-				.article-title
-					h4 Reputation & Transparency
-				.text-block
-					.row
-						.col-lg-8
-							.text-block__column
-								p  A company’s reputation determines how much they are to be trusted and how they respond to a buyer’s needs. We examined a company’s complaints registered with the Consumer Financial Protection Bureau (CFPB) and any regulatory actions reported on the National Mortgage Licensing System (NMLS).
-section.best-offers.loan-offers
-	.container
-		.section-title
-			h2 Best personal loan offers that might suit your purpose
-		+offerCards
-		button#show-cards.button-light.w-100 Show more offers
-
-		.subscribe-block.bg-blue
-			.block-title
-				h3 Get a full personal loan report via&nbsp;email now
-			form.subscribe-form(action="#")
-				.form-item
-					input(type="email" placeholder="Input your email")
-					
-				.form-btn
-					button.page-button.w-100 Get your report
+	.container-large
+		.container--blue
+			.title-1
+				h1 Methodology: how do we pick the&nbsp;best Personal loans
+.pt-100
+	section.methodology-content
+		.container
+			.row
+				.col-xl-9
+					.white-bg
+						.section-title
+							h2 This is how
+						.text-articles
+							article.text-article
+								.article-title
+									h4 Lender Types
+								.text-block
+									.row
+										.col-lg-8
+											.text-block__column
+												p The type of lender that services a mortgage can have a significant impact on the rates offered and the service provided. We researched several types of companies, from online lenders and brokers to large national banks and credit unions.
+										.col-lg-4
+											.text-block__column.text-20
+												p Unlike many loan broker services, Credible is transparent about its fees
+							article.text-article
+								.article-title
+									h4 Available Mortgage Types
+								.text-block
+									.row
+										.col-lg-8
+											.text-block__column
+												p  We looked at whether the mortgage lenders offer fixed- and adjustable-rate loans, government-sponsored programs such as FHA, VA, and USDA, or other types such as jumbo, non-qualifying, or customizable loans.
+							article.bg-article
+								.row
+									.col-lg-8
+										.color-block
+											h4  Customer Experience
+											p We considered the added benefits and perks that lenders provide to assist the customer and simplify the mortgage process, such as an easy-to-use website, proprietary mobile apps, mortgage calculators, in which states they provide service, and the customer service options, among many other factors.
+							article.text-article
+								.article-title
+									h4 Reputation & Transparency
+								.text-block
+									.row
+										.col-lg-8
+											.text-block__column
+												p  A company’s reputation determines how much they are to be trusted and how they respond to a buyer’s needs. We examined a company’s complaints registered with the Consumer Financial Protection Bureau (CFPB) and any regulatory actions reported on the National Mortgage Licensing System (NMLS).
+				.col-xl-3
+					+card-sidebar2
