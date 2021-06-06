@@ -4,16 +4,17 @@ block content
 	#overlay
 	include ../sections/_mobile-menu.pug
 	+header([{link: "index.html", title: "Top 10"}, {link: "review.html", title: "Reviews"}, {link: "methodology.html", title: "Peer to Peer"}, {link: "top-level.html", title: "Comparison"}, {link: "sub-level.html", title: "Learn"}])
-	include ../sections/contacts/_header-banner
-	include ../sections/_contact-card.pug
-	//- include ../sections/_more-offers.pug
-	include ../sections/_card-loan.pug
-	include ../sections/_card-mortgage.pug
-	include ../sections/_card-credit.pug
-	include ../sections/_tabs.pug
-	include ../sections/_card-articles-section.pug
-	include ../sections/_footer.pug
-	include ../sections/_modal.pug
+	main.contacts
+		include ../sections/contacts/_header-banner
+		include ../sections/_contact-card.pug
+		//- include ../sections/_more-offers.pug
+		include ../sections/_card-loan.pug
+		include ../sections/_card-mortgage.pug
+		include ../sections/_card-credit.pug
+		include ../sections/_tabs.pug
+		include ../sections/_card-articles-section.pug
+		include ../sections/_footer.pug
+		include ../sections/_modal.pug
     
 block variables
 	-var title = "Contacts";
