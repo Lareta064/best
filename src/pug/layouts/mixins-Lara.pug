@@ -22,18 +22,19 @@ mixin floatHeader
 		.container
 			.header-content
 				.header-left
-					a(href="index.html").logo bestofpersonalloans.com
-					a(href="#!").text-link.d-none.d-lg-block Credible Review
+					a(href="index.html").logo Best Reviews By Consumers
+					a(href="#!").text-link.float-link Credible Review
 				.header-right
 					a(href="#!").page-button#float-btn  Get your rate now
-					a(href="index.html").button-light Close
+					a(href="index.html").button-light.d-none.d-md-block Close
 					a(href="index.html").page-close.d-flex.d-md-none
 						+close
 
 mixin loan-card(label, imgSrc, title, per1, per2)
 	.loan-card
 		a(href="review.html").loan-card__inner
-			.card-label !{label}
+			if label != ''
+				.card-label !{label}
 			.loan-card__head
 				img(src="img/cards/"+ imgSrc +".jpg", width="335"  alt="logo")
 			.loan-card__body
@@ -109,6 +110,18 @@ mixin card-sidebar
 				p FVI
 			.card-sidebar__text
 				p The Annual Percentage Rate (APR) is the cost you pay each year to borrow money, including fees, expressed as a percentage
+mixin card-sidebar2
+	.card-sidebar.card-sidebar--long.card-flex
+		.card-sidebar__img
+			img(src="img/cards/fvi.jpg", width="300" alt="img")
+		.card-sidebar__body
+			.card-sidebar__label
+				p Tip #12
+			.card-sidebar__title
+				h3 Take a Loan Only When Absolutely Necessary
+			.card-sidebar__text
+				p A personal loan should only be taken after a thorough assessment of your requirements and already existing loan/repayment commitments
+
 mixin subscribe-block(colorClass)
 	.subscribe-block-wrapper
 		.row
