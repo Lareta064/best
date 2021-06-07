@@ -1,29 +1,31 @@
 .loan-articles {
   margin-bottom: 120px;
- .button-box{
-      margin-top: 30px;
-       max-width:960px;
+  @media (min-width: 992px) and (max-width: 1364px) {
+    margin-bottom: 180px;
+  }
+  .button-box {
+    margin-top: 30px;
+    max-width: 960px;
   }
   .section-title {
     margin-bottom: 40px;
-  } 
-    @media (max-width: 767px) {
-      .section-title{margin-bottom: 25px; }
-      
-      .button-box{
-        padding-left: 20px;
-        padding-right: 20px;
-        margin-top: 30px;
-       
-      }
+  }
+  @media (max-width: 767px) {
+    .section-title {
+      margin-bottom: 25px;
+    }
+
+    .button-box {
+      padding-left: 20px;
+      padding-right: 20px;
+      margin-top: 30px;
     }
   }
-
+}
 
 .articles-cards {
   display: block;
   justify-content: space-between;
-
 
   .head-4 h4 {
     @media (min-width: 992px) and (max-width: 1364px) {
@@ -42,14 +44,18 @@
   .ma;
   border-radius: 10px;
   overflow: hidden;
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
   padding-bottom: 55px;
 
   &:hover {
     .head-4 h4 span {
       color: @red;
-      background: linear-gradient(to right, rgba(229, 69, 69, .2), rgba(229, 69, 69, .2));
+      background: linear-gradient(
+        to right,
+        rgba(229, 69, 69, 0.2),
+        rgba(229, 69, 69, 0.2)
+      );
       background-position: 0 100%;
       background-repeat: repeat-x;
       background-size: 5px 1px;
@@ -59,9 +65,7 @@
   @media (max-width: 1199px) {
     max-width: 300px;
     margin-bottom: 30px;
-
   }
-
 
   @media (max-width: 767px) {
     margin-bottom: 30px;
@@ -92,7 +96,11 @@
 
   .head-4 h4 span {
     width: 205px;
-    background: linear-gradient(to right, rgba(77, 124, 254, .2), rgba(77, 124, 254, .2));
+    background: linear-gradient(
+      to right,
+      rgba(77, 124, 254, 0.2),
+      rgba(77, 124, 254, 0.2)
+    );
     background-position: 0 100%;
     background-repeat: repeat-x;
     background-size: 5px 1px;
@@ -100,7 +108,6 @@
 }
 
 .article-card__terms {
-
   p {
     display: -webkit-box;
     -webkit-line-clamp: 6;
@@ -129,7 +136,6 @@
 //   }
 // }
 
-
 // .article-card.article-card-1 {
 //   @media (max-width: 1199px) {
 //     margin-bottom: 45px;
@@ -147,4 +153,3 @@
 //     margin-right: auto;
 //   }
 // }
-
