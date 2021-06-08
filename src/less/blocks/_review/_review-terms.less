@@ -1,0 +1,102 @@
+.section-title--label{
+	position: relative;
+	width: fit-content;
+	span{
+	  position: absolute;
+	  top: -16px;
+	  transform: translateX(100%);
+	  right: -25px;
+	  height: 32px;
+	  line-height: 32px;
+	  padding-left: 10px;
+	  padding-right: 10px;
+	  background-color: @green;
+	  display: inline-block;
+	  font-size: 20px;
+	  font-weight: 700;
+	  color: #fff;
+	  border-radius:4px;
+	  @media(max-width:767px){
+		right: auto;
+		left: 0;
+		top: -14px;
+		transform: translate(0, -100%);
+	  }
+  
+	}
+  }
+  .review-terms__body{padding-top: 50px;}
+  .review-terms 	.section-title{ margin-bottom: 20px;} 
+  .review-terms .text-20 p{line-height: 1.4;}
+  .term-percent,
+  .term-repayment,
+  .term-amount ,
+  .term-score {
+	padding: 20px 35px 20px 30px;
+	border-radius:10px;
+	background-color: #fff;
+	margin-bottom: 30px;
+	max-width:465px;
+	@media(max-width:1199px){
+	  padding: 20px;
+	}
+	@media(max-width:767px){
+	  max-width: 335px;
+	}
+	p{
+	  font-size: 60px;
+	  font-weight: 700;
+	  line-height: 1.22;
+	  color: @purple;
+	  @media(max-width:1199px){
+		  font-size: 40px;
+		  white-space: nowrap;
+	  }
+	}
+	span{
+	  font-size: 16px;
+	  font-weight: 700;
+	  color: @purple;
+	}
+  }
+  .term-percent{
+	background-color: @green;
+	p, span{
+	  color: #fff;
+	}
+  }
+  .loan-terms{
+	margin-bottom: 60px;
+  }
+  .terms-info__text{
+	p {
+	  font-weight: bold;
+	  font-size: 16px;
+	  line-height: 24px;
+	  letter-spacing: 0.05em;
+	  text-transform: uppercase;
+		}
+	span{font-size: 16px;line-height: 24px;}
+  }
+  .terms-info__text+.terms-info__text{margin-top: 40px;}
+  .term-score{position: relative;}
+  .term-score .page-tooltip{display: inline-block;}
+  
+  .loan-terms-info .col-md-6:last-child  .terms-info__text:first-child p{color: @green;} 
+  .review-content .card-sidebar{
+	@media(max-width: 1364px){
+	  margin-left: 0;
+	  margin-top: 40px;
+	}
+  }
+  .page-tooltip__box p{
+	white-space: normal;
+  }
+  .review-content .page-tooltip .page-tooltip__box{
+	@media(max-width:767px){
+	  right: -42px;
+	}
+  }
+  .loan-terms-wrapper{
+	margin-bottom: 80px;
+  }

@@ -3,6 +3,7 @@ extends ../layouts/layout.pug
 block content
 	#overlay
 	include ../sections/_mobile-menu.pug
+
 	+header([{link: "index.html", title: "Top 10"}, {link: "review.html", title: "Reviews"}, {link: "methodology.html", title: "Peer to Peer"}, {link: "top-level.html", title: "Comparison"}, {link: "sub-level.html", title: "Learn"}])
 	main.contacts
 		include ../sections/contacts/_header-banner
@@ -15,6 +16,7 @@ block content
 		include ../sections/_card-articles-section.pug
 		include ../sections/_footer.pug
 		include ../sections/_modal.pug
+
     
 block variables
 	-var title = "Contacts";
