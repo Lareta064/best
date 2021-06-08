@@ -20,11 +20,16 @@
   color: #fff;
   padding-bottom: 16px;
   font-size: 80px;
+  @media(max-width:767px){
+    font-size: 40px;
+  }
 }
 
 .inner-header .container--blue .text-30 p {
   color: #fff;
   font-weight: 900;
-  max-width: 900px;
-  min-width:900px;
+  @media (min-width: 991px) {
+    max-width: 900px;
+    min-width: 900px;
+  }
 }
