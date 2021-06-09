@@ -1,0 +1,11 @@
+.ma {
+  margin-left: auto;
+  margin-right: auto;
+}
+.tr {
+  transition: 0.5s;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
