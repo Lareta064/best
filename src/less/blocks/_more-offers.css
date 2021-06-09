@@ -1,0 +1,17 @@
+.offers-cards__wrapper .loan-card {
+  margin-bottom: 40px;
+}
+@media (max-width: 1199px) {
+  .more-offers .card-sidebar {
+    margin-left: 0px;
+    margin-top: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .more-offers .card-sidebar {
+    margin-left: 20px;
+  }
+}
+.more-offers .card-sidebar .card-sidebar__title {
+  font-size: 20px;
+}

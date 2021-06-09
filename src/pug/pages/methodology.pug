@@ -3,8 +3,13 @@ extends ../layouts/layout.pug
 block content
 	#overlay
 	include ../sections/_mobile-menu.pug
-	+header([{link: "index.html", title: "Top 10"}, {link: "review.html", title: "Reviews"}, {link: "methodology.html", title: "Peer to Peer", addClass: 'active'}, {link: "top_level.html", title: "Comparison"}, {link: "#", title: "Learn"}])
+
+	+header([{link: "index.html", title: "Top 10"}, {link: "review.html", title: "Reviews"}, {link: "methodology.html", title: "Peer to Peer", addClass: 'active'}, {link: "top-level.html", title: "Comparison"}, {link: "sub-level.html", title: "Learn"}])
 	main.methodology
+		//- include ../sections/method/_header-banner
+		//- include ../sections/method/_faq
+		//- include ../sections/method/_card-articles
+		//- include ../sections/_footer.pug
 		include ../sections/method/_header-banner
 		include ../sections/_card-loan.pug
 		include ../sections/_card-mortgage.pug
@@ -13,5 +18,6 @@ block content
 		include ../sections/_card-articles-section.pug
 		include ../sections/_footer.pug
 		
+
 block variables
 	-var title = "Methodology";
