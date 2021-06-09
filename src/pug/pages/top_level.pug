@@ -3,7 +3,7 @@ extends ../layouts/layout.pug
 block content
     #overlay
     include ../sections/_mobile-menu.pug
-    +header([ {link: "review.html",  title: "Reviews" }, {link: "methodology.html", title: "Peer to Peer"}, {link: "top_level.html", title: "Comparison"}, {link: "#", title: "Learn" }])
+    +header([ {link: "review.html",  title: "Reviews" }, {link: "methodology.html", title: "Peer to Peer"}, {link: "top_level.html", title: "Comparison"}, {link: "sub-level.html", title: "Learn" }])
     main.page-toplevel
         include ../sections/top_level/_header-banner
         include ../sections/top_level/_toplevel-loan.pug
