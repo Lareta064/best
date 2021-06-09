@@ -80,7 +80,14 @@ input, input:focus, button, button:focus, input::placeholder {
   font-family: inherit;
   padding: 0;
 }
-
+form input[type="submit"]{
+  display: inline-block;
+}
+input[type="radio"], input[type='checkbox'], input[type="submit"] {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
 .container {
   width: 100%;
   padding-left: 15px;
